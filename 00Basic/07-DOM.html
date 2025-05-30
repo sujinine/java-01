@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM - Javascript</title>
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="07-DOM.css" />
+    <script src="07-DOM.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>
+        <span>Hello</span><strong>Your Name</strong>
+        <img src="./images/hand.svg" alt="" />
+      </h1>
+      <button aria-label="이미지변경">
+        <img src="./images/person.svg" class="avatar" />
+      </button>
+    </header>
+    <main class="main">
+      <img src="./images/logo.png" class="logo" alt="" />
+      <h2 class="heading">선택자</h2>
+      <ul class="selector">
+        <li class="item1">
+          <a href="">
+            <img src="./images/selector1.gif" alt="" />
+            <strong>디자인 사고력 향상</strong>
+            <div>디지털 감각을 깨우다</div>
+          </a>
+        </li>
+        <li class="item2">
+          <a href="">
+            <img src="./images/selector2.gif" alt="" />
+            <strong>웹 개발 구조 이해</strong>
+            <div>기초부터 탄탄하게</div>
+          </a>
+        </li>
+        <li class="item3">
+          <a href="">
+            <img src="./images/selector3.gif" alt="" />
+            <strong>UI 디자인 입문</strong>
+            <div>쉽고 빠르게 시작하기</div>
+          </a>
+        </li>
+        <li class="item4">
+          <a href="">
+            <img src="./images/selector4.gif" alt="" />
+            <strong>SCSS 프로젝트 실습</strong>
+            <div>스타일의 흐름을 잡다</div>
+          </a>
+        </li>
+        <li class="item5">
+          <a href="">
+            <img src="./images/selector5.gif" alt="" />
+            <strong>HTML5 기초 다지기</strong>
+            <div>태그로 구조를 그리다</div>
+          </a>
+        </li>
+        <li class="item6">
+          <a href="">
+            <img src="./images/selector6.gif" alt="" />
+            <strong>CSS3 첫걸음</strong>
+            <div>디자인의 색을 입히다</div>
+          </a>
+        </li>
+      </ul>
+      <h2 class="heading">클래스</h2>
+
+      <nav class="tabs">
+        <ul>
+          <li><button class="active">All Topic</button></li>
+          <li><button>Popular</button></li>
+          <li><button>Newest</button></li>
+          <li><button>Advance</button></li>
+        </ul>
+      </nav>
+      <h2 class="heading">텍스트 제어</h2>
+      <ul class="text-list">
+        <li>
+          <div class="avatar"><img src="./images/avatar1.svg" alt="" /></div>
+          <div class="name">김하늘</div>
+          <div class="job">UX 강사</div>
+          <button>수강신청</button>
+        </li>
+        <li>
+          <div class="avatar"><img src="./images/avatar2.svg" alt="" /></div>
+          <div class="name">이정우</div>
+          <div class="job">UX 강사</div>
+          <button>트레이너 이름</button>
+        </li>
+        <li>
+          <div class="avatar"><img src="./images/avatar3.svg" alt="" /></div>
+          <div class="name">박현우</div>
+          <div class="job">자바스크립트 매니저</div>
+          <button>트레이너 직책</button>
+        </li>
+        <li>
+          <div class="avatar"><img src="./images/avatar1.svg" alt="" /></div>
+          <div class="name">리베하얀</div>
+          <div class="job">UX 강사</div>
+          <button>수강신청</button>
+        </li>
+      </ul>
+      <h2 class="heading">CSS 제어</h2>
+      <ul class="selector css">
+        <li class="item1">
+          <a href="">
+            <img src="./images/selector1.svg" alt="" />
+            <strong>디지털 디자인 사고</strong>
+            <div>강희현</div>
+          </a>
+        </li>
+        <li class="item2">
+          <a href="">
+            <img src="./images/selector2.svg" alt="" />
+            <strong>웹 개발자 구조 이해</strong>
+            <div>오병석</div>
+          </a>
+        </li>
+        <li class="item3">
+          <a href="">
+            <img src="./images/selector3.svg" alt="" />
+            <strong>UI 디자인 기초 수업</strong>
+            <div>이김범</div>
+          </a>
+        </li>
+        <li class="item4">
+          <a href="">
+            <img src="./images/selector4.svg" alt="" />
+            <strong>Dart SCSS 프로젝트 수업</strong>
+            <div>박제호</div>
+          </a>
+        </li>
+        <li class="item5">
+          <a href="">
+            <img src="./images/selector1.svg" alt="" />
+            <strong>HTML5 기초 강의</strong>
+            <div>최승민</div>
+          </a>
+        </li>
+        <li class="item6">
+          <a href="">
+            <img src="./images/selector2.svg" alt="" />
+            <strong>CSS3 기초 강의</strong>
+            <div>김주환</div>
+          </a>
+        </li>
+      </ul>
+      <h2 class="heading">DOM 탐색</h2>
+      <ul class="routine-list">
+        <li class="item1">
+          <button>
+            <strong class="day">Day1</strong>
+            <span class="schedule">7개 스케줄</span>
+            <em class="time">5 hour</em>
+          </button>
+          <div class="detail-list">
+            <ul>
+              <li>
+                <strong>Javascript의 이해</strong>
+                <div>30 mins</div>
+                <button aria-label="옵션"></button>
+              </li>
+              <li>
+                <strong>HTML/CSS 기초</strong>
+                <div>45 mins</div>
+                <button aria-label="옵션"></button>
+              </li>
+              <li>
+                <strong>DOM 조작</strong>
+                <div>40 mins</div>
+                <button aria-label="옵션"></button>
+              </li>
+              <li>
+                <strong>Javascript 함수</strong>
+                <div>50 mins</div>
+                <button aria-label="옵션"></button>
+              </li>
+              <li>
+                <strong>이벤트 처리</strong>
+                <div>35 mins</div>
+                <button aria-label="옵션"></button>
+              </li>
+              <li>
+                <strong>API 통신</strong>
+                <div>55 mins</div>
+                <button aria-label="옵션"></button>
+              </li>
+              <li>
+                <strong>JavaScript 디버깅</strong>
+                <div>45 mins</div>
+                <button aria-label="옵션"></button>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="item2">
+          <button>
+            <strong class="day">Day2</strong>
+            <span class="schedule">7개 스케줄</span>
+            <em class="time">6 hour</em>
+          </button>
+          <div class="detail-list">
+            <ul>
+              <li>
+                <strong>React 기초</strong>
+                <div>40 mins</div>
+                <button aria-label="옵션"></button>
+              </li>
+              <li>
+                <strong>React 컴포넌트</strong>
+                <div>50 mins</div>
+                <button aria-label="옵션"></button>
+              </li>
+              <li>
+                <strong>State와 Props</strong>
+                <div>45 mins</div>
+                <button aria-label="옵션"></button>
+              </li>
+              <li>
+                <strong>React Hooks</strong>
+                <div>55 mins</div>
+                <button aria-label="옵션"></button>
+              </li>
+              <li>
+                <strong>React 라우터</strong>
+                <div>40 mins</div>
+                <button aria-label="옵션"></button>
+              </li>
+              <li>
+                <strong>Redux 기초</strong>
+                <div>50 mins</div>
+                <button aria-label="옵션"></button>
+              </li>
+              <li>
+                <strong>Node.js 서버 구축</strong>
+                <div>60 mins</div>
+                <button aria-label="옵션"></button>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="item3">
+          <button>
+            <strong class="day">Day3</strong>
+            <span class="schedule">10개 스케줄</span>
+            <em class="time">12 hour</em>
+          </button>
+        </li>
+      </ul>
+
+      <h2 class="heading">DOM 추가/삭제</h2>
+      <section class="comment">
+        <form>
+          <fieldset>
+            <legend>댓글입력</legend>
+            <input class="comment-input" placeholder="댓글 입력" />
+            <button type="submit" class="btn-add-html">HTML로 추가</button>
+            <button type="submit" class="btn-add-dom">DOM으로 추가</button>
+          </fieldset>
+        </form>
+        <ul class="comment-list"></ul>
+      </section>
+    </main>
+
+    <!-- open속성을 추가하여 속성을 제어하세요. -->
+    <dialog class="dialog">
+      <h2 class="heading">속성 제어</h2>
+      <button class="close" aria-label="닫기">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          class="bi bi-x-lg"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+          />
+        </svg>
+      </button>
+      <div class="attribute">
+        <h3>Rating</h3>
+        <div class="ratings">
+          <div>
+            <input type="radio" name="rate" id="rate1" value="5" /><label for="rate1">5 ⭐</label>
+            <input type="radio" name="rate" id="rate2" value="4" /><label for="rate2">4 ⭐</label>
+            <input type="radio" name="rate" id="rate3" value="3" /><label for="rate3">3 ⭐</label>
+            <input type="radio" name="rate" id="rate4" value="2" /><label for="rate4">2 ⭐</label>
+          </div>
+          <div>
+            <button class="btn-disabled">모두 비활성</button>
+            <button>선택한 점수 확인</button>
+          </div>
+        </div>
+        <h3>Name</h3>
+        <div class="name">
+          <input type="text" value="리베하얀" readonly />
+          <button>이름변경</button>
+        </div>
+        <h3>Password</h3>
+        <div class="password">
+          <div>
+            <input type="password" />
+            <button aria-label="비밀번호 보기"></button>
+            <!-- <button aria-label="비밀번호 보기" class="active"></button> -->
+          </div>
+        </div>
+        <h3 class="colspan">Avatar</h3>
+        <div class="colspan">
+          <button>프로필 사진변경</button>
+          <button class="btn-alt">대체텍스트</button>
+        </div>
+        <h3 class="colspan">Add File</h3>
+        <div class="colspan">
+          <input type="file" name="" id="" class="file" />
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>

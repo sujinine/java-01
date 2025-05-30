@@ -1,0 +1,125 @@
+@layer Reset, Colors, Layout, Components, Organism, Utillity;
+
+@import url(./reset.css) layer(Reset);
+
+@layer Colors {
+  :root {
+    --gray800: #595959;
+    --gray600: #818181;
+    --gray200: #b9b9b9;
+    --gray100: #dddddd;
+
+    --white: #fff;
+    --black: #000;
+  }
+}
+
+@layer Layout {
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1rem;
+    padding: 50px;
+  }
+  .wrapper {
+    min-width: 70vw;
+  }
+  legend {
+    &.text-type1 {
+      all: unset;
+      display: block;
+    }
+  }
+}
+
+@layer Components {
+  @layer Typography {
+    .text-type1 {
+      color: var(--black);
+      font-size: 1.6rem;
+    }
+  }
+  @layer Table {
+    .table-type1 {
+      border: 1px solid var(--gray100);
+      tr {
+        + tr {
+          border-top: 1px solid var(--gray100);
+        }
+      }
+      th,
+      td {
+        padding: 1rem 2rem;
+      }
+      th {
+        color: var(--gray800);
+        font-size: 1.3rem;
+        font-weight: 400;
+        text-align: left;
+      }
+    }
+  }
+  @layer Form {
+    .text-field {
+      .table-type1 & {
+        border: none;
+        width: 100%;
+      }
+    }
+  }
+  @layer Button {
+    .btn-type1 {
+      min-width: 12rem;
+      padding-inline: 1rem;
+      height: 4rem;
+      border-radius: 2rem;
+      border: 1px solid var(--gray200);
+      background: var(--white);
+      color: var(--black);
+      font-size: 1.3rem;
+    }
+    .btn-type2 {
+      min-width: 12rem;
+      padding-inline: 1rem;
+      height: 4rem;
+      border-radius: 2rem;
+      border: 1px solid var(--gray200);
+      background: var(--gray200);
+      color: var(--white);
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@layer Organism {
+  .url {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    color: var(--gray600);
+    font-size: 1.3rem;
+  }
+  .btn-group {
+    display: flex;
+    gap: 0.8rem;
+  }
+}
+
+@layer Utillity {
+  .align {
+    display: flex;
+    &.center {
+      justify-content: center;
+    }
+  }
+
+  .mt17 {
+    margin-top: 1.7rem;
+  }
+  .mt35 {
+    margin-top: 3.5rem;
+  }
+  .mt56 {
+    margin-top: 5.6rem;
+  }
+}

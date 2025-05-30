@@ -1,0 +1,149 @@
+p {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
+  color: #1d1d1f;
+  line-height: 1.47059;
+  letter-spacing: -0.022em;
+}
+
+.block {
+  display: inline-flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+  }
+
+  form {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+}
+
+input {
+  background-color: #f5f5f7;
+  border: none;
+  border-radius: 12px;
+  height: 44px;
+  padding: 0 20px;
+  font-size: 17px;
+  font-family: inherit;
+  transition: box-shadow 0.2s ease, background-color 0.2s ease;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 125, 250, 0.15);
+    background-color: #ffffff;
+  }
+}
+
+button {
+  background-color: #0071e3;
+  border: none;
+  border-radius: 22px;
+  height: 44px;
+  min-width: 100px;
+  padding-inline: 20px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: inherit;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: #0077ed;
+  }
+
+  &:active {
+    background-color: #0068d1;
+  }
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: #1d1d1f;
+
+  ~ h2 {
+    padding: 100px 0 0;
+  }
+}
+
+.sum {
+  input {
+    width: 100px;
+  }
+}
+
+.private {
+  input:not([type="email"]) {
+    width: 100px;
+  }
+}
+
+h3:not(.change-title) {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.022em;
+  color: #1d1d1f;
+
+  ~ h3 {
+    padding: 20px 0 0;
+  }
+
+  &::before {
+    content: "👉";
+    margin-right: 6px;
+  }
+}
+
+.toast {
+  background-color: #0071e3;
+  color: #fff;
+  border-radius: 22px;
+  opacity: 1;
+  translate: 0;
+  transition: 0.5s allow-discrete;
+  padding: 14px 20px;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: 0 4px 16px rgba(0, 113, 227, 0.3);
+
+  &:not([open]) {
+    translate: 0 60px;
+    opacity: 0;
+  }
+
+  @starting-style {
+    translate: 0 60px;
+    opacity: 0;
+  }
+}
+
+#timer {
+  border: none;
+  padding: 18px;
+  width: 200px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+}

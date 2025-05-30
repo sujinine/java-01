@@ -1,0 +1,90 @@
+@layer Reset, Variable, Components, Layout, Utillity;
+
+@import url(./reset.css) layer(Reset);
+
+@layer Variable {
+  :root {
+    --gray500: #636563;
+    --gray100: #dddddd;
+
+    --black: #000;
+    --white: #fff;
+  }
+}
+
+@layer Layout {
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1rem;
+    padding: 50px;
+  }
+  .wrapper {
+    min-width: 80vw;
+  }
+}
+
+@layer Components {
+  @layer list {
+    .list-type1 {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+      border-left: 1px solid var(--gray100);
+      border-top: 1px solid var(--gray100);
+      li {
+        align-content: center;
+        /* padding-top: 4.5rem; */
+        box-sizing: border-box;
+        aspect-ratio: 1;
+        text-align: center;
+        border-right: 1px solid var(--gray100);
+        border-bottom: 1px solid var(--gray100);
+        div {
+          color: var(--black);
+          font-size: 1.8rem;
+          padding-block: 2.4rem 0.5rem;
+        }
+        p {
+          color: var(--gray500);
+          font-size: 1.6rem;
+          font-weight: 300;
+          min-height: 4.8rem;
+        }
+        &::before {
+          content: var(--icon);
+        }
+        &:nth-child(1) {
+          --icon: url(../images/ico_list7_1.svg);
+        }
+        &:nth-child(2) {
+          --icon: url(../images/ico_list7_2.svg);
+        }
+        &:nth-child(3) {
+          --icon: url(../images/ico_list7_3.svg);
+        }
+        &:nth-child(4) {
+          --icon: url(../images/ico_list7_4.svg);
+        }
+        &:nth-child(5) {
+          --icon: url(../images/ico_list7_5.svg);
+        }
+        &:nth-child(6) {
+          --icon: url(../images/ico_list7_6.svg);
+        }
+        &:nth-child(7) {
+          --icon: url(../images/ico_list7_7.svg);
+        }
+        &:nth-child(8) {
+          --icon: url(../images/ico_list7_8.svg);
+        }
+        &:nth-child(9) {
+          --icon: url(../images/ico_list7_9.svg);
+        }
+        &:nth-child(10) {
+          --icon: url(../images/ico_list7_10.svg);
+        }
+      }
+    }
+  }
+}

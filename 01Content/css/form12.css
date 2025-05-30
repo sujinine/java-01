@@ -1,0 +1,46 @@
+.box {
+  background: #fff;
+  padding: 24px;
+  margin-bottom: 32px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 400px;
+}
+.box h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+button {
+  margin-top: 16px;
+  padding: 10px 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background: #0056b3;
+}
+.message {
+  margin-top: 12px;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.align {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+ul {
+  display: grid;
+  gap: 0.5rem;
+  margin-block: 1rem;
+  li {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+}

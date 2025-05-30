@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GSAP 시작하기</title>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="./01-basic.js" defer></script>
+  <link rel="stylesheet" href="./01-basic.css" />
+</head>
+
+<body>
+  <h2>gsap.to()</h2>
+  <div class="profile" id="gsap-to">
+    <div class="avatar"><img src="../assets/images/logo.png" alt="Rebehayan" /></div>
+    <strong class="nickname">Rebehayan</strong>
+    <div class="job">Web Publisher / FrontEnd Developer</div>
+    <div class="btn-group">
+      <button type="button" class="btn-primary">Message</button>
+      <button type="button" class="btn-secondary">Follow</button>
+    </div>
+  </div>
+  <h2>gsap.from()</h2>
+  <div class="profile" id="gsap-from">
+    <div class="avatar"><img src="../assets/images/logo.png" alt="Rebehayan" /></div>
+    <strong class="nickname">Rebehayan</strong>
+    <div class="job">Web Publisher / FrontEnd Developer</div>
+    <div class="btn-group">
+      <button type="button" class="btn-primary">Message</button>
+      <button type="button" class="btn-secondary">Follow</button>
+    </div>
+  </div>
+  <h2>gsap.fromTo()</h2>
+  <div class="profile" id="gsap-fromTo">
+    <div class="avatar"><img src="../assets/images/logo.png" alt="Rebehayan" /></div>
+    <strong class="nickname">Rebehayan</strong>
+    <div class="job">Web Publisher / FrontEnd Developer</div>
+    <div class="btn-group">
+      <button type="button" class="btn-primary">Message</button>
+      <button type="button" class="btn-secondary">Follow</button>
+    </div>
+  </div>
+  <h2>Stagger</h2>
+  <div class="register">
+    <h3>Create Account</h3>
+    <p class="text">서비스 이용을 위해 계정을 생성해주세요.</p>
+    <form class="wrapper">
+      <div><input type="email" autocomplete="email" placeholder="Email" /></div>
+      <div><input type="password" autocomplete="new-password" placeholder="Confirm Password" /></div>
+      <div><input type="password" autocomplete="current-password" placeholder="Password" /></div>
+      <div><button type="submit">회원가입</button></div>
+    </form>
+    <div>
+      <h3>이미 가입하신 계정이 있으신가요?</h3>
+      <a href="">로그인</a>
+    </div>
+  </div>
+
+  <h2>Timeline</h2>
+  <header class="header">
+    <h1>Rebehayan</h1>
+    <nav class="gnb">
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Service</a></li>
+        <li><a href="">Product</a></li>
+      </ul>
+    </nav>
+    <button class="btn-contact">Contact Us</button>
+  </header>
+
+
+  <h2>Controling Animations</h2>
+  <div class="control-wrap">
+    <div><img src="./images/car.gif" alt="" class="car" /></div>
+    <div class="btns">
+      <button>play</button>
+      <button>pause</button>
+      <button>resume</button>
+      <button>reverse</button>
+      <button>restart</button>
+    </div>
+  </div>
+</body>
+
+</html>

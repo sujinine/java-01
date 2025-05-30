@@ -1,0 +1,192 @@
+@layer Reset, Colors, Layout, Components, Organism, Template, Utillity;
+
+@import url(./reset.css) layer(Reset);
+@property --width {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: auto;
+}
+
+@layer Colors {
+  :root {
+    --gray800: #6a6a6a;
+    --gray700: #9ea0a3;
+    --gray500: #b8b8b8;
+    --gray400: #d7d7d7;
+    --gray300: #e1e4e8;
+    --gray200: #ededed;
+    --gray100: #f8f8f8;
+
+    --white: #fff;
+    --black08: rgba(0, 0, 0, 0.08);
+    --black: #000;
+  }
+}
+
+@layer Layout {
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1rem;
+    padding: 50px;
+  }
+}
+
+@layer Components {
+  @layer Typography {
+    .text-type1 {
+      color: var(--gray800);
+      font-size: 1.4rem;
+    }
+  }
+  @layer Form {
+    .checkbox {
+      overflow: hidden;
+      position: absolute;
+      border: 0;
+      width: 1px;
+      height: 1px;
+      clip: rect(1px, 1px, 1px, 1px);
+      + label {
+        padding-left: 2.5rem;
+        background: var(--checkbox, url(../images/bg_check_off2.svg)) no-repeat left;
+        color: var(--gray800);
+        font-size: 1.4rem;
+      }
+      &:focus {
+        + label {
+          outline: 1px solid var(--black);
+        }
+      }
+      &:checked {
+        + label {
+          --checkbox: url(../images/bg_check_on2.svg);
+        }
+      }
+    }
+    .text-field {
+      width: var(--width, auto);
+      padding-inline: 1.5rem;
+      height: 3.6rem;
+      border: 1px solid var(--gray400);
+      background: var(--white);
+      color: var(--gray800);
+      font-size: 1.4rem;
+      box-sizing: border-box;
+      &::placeholder {
+        color: var(--gray500);
+      }
+    }
+    .select {
+      > button {
+        anchor-name: --select;
+
+        padding-inline: 1.4rem 3.1rem;
+        height: 3.6rem;
+        border: 1px solid var(--gray400);
+        background: url(../images/bg_select.svg) no-repeat right 1rem center var(--white);
+        color: var(--gray800);
+        font-size: 1.4rem;
+        white-space: nowrap;
+      }
+      [popover] {
+        inset: anchor(--select bottom) auto auto anchor(--select left);
+        min-width: anchor-size(--select);
+        translate: 0 -0.1rem;
+        padding: 0.5rem;
+        border-radius: 0rem 0rem 0.5rem 0.5rem;
+        border: 1px solid var(--gray400);
+        background: #fff;
+        box-shadow: 4px 4px 4px 0px var(--black08);
+        box-sizing: border-box;
+
+        button {
+          padding-inline: 1rem;
+          width: 100%;
+          height: 2.5rem;
+          box-sizing: border-box;
+          color: var(--gray800);
+          font-size: 1.3rem;
+          text-align: left;
+          &:focus,
+          &:hover {
+            background-color: var(--gray200);
+          }
+        }
+      }
+    }
+  }
+  @layer Button {
+    .btn-type1 {
+      padding-inline: 1rem;
+      color: var(--gray800);
+      font-size: 1.4rem;
+      height: 3.6rem;
+      border: 1px solid var(--gray400);
+      background: var(--gray100);
+    }
+  }
+  @layer Table {
+    .table-type1 {
+      border-top: 1px solid var(--gray700);
+      tr {
+        border-bottom: 1px solid var(--gray300);
+      }
+      th {
+        padding-inline: 2rem;
+        text-align: left;
+        color: var(--black);
+        font-size: 1.5rem;
+        font-weight: 400;
+        background-color: var(--gray100);
+        &[aria-label] {
+          &::before {
+            content: url(../images/ico_requird.svg);
+            margin-right: 0.81rem;
+          }
+        }
+      }
+      td {
+        padding: 1rem 2rem;
+      }
+    }
+  }
+}
+
+@layer Organism {
+  .check-list {
+    display: inline-flex;
+    gap: 2rem;
+  }
+  .address {
+    display: grid;
+    grid-template-columns: 12.3rem 5.8rem 1fr;
+    gap: 0.3rem;
+    width: var(--w, auto);
+    button {
+      margin-right: 0.7rem;
+    }
+  }
+  .tel {
+    display: grid;
+    grid-template-columns: minmax(12.3rem, min-content) 12.3rem 12.3rem;
+    gap: 0.3rem;
+  }
+}
+
+@layer Utillity {
+  .align {
+    display: flex;
+    &.left {
+      justify-content: start;
+    }
+  }
+
+  .ml20 {
+    margin-left: 2rem;
+  }
+  .mt8 {
+    margin-top: 0.8rem;
+  }
+}

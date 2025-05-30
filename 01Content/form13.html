@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폼13</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/form13.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <section class="box">
+      <label for="nickname">닉네임 (최대 10자)</label>
+      <input type="text" id="nickname" maxlength="10" placeholder="닉네임을 입력하세요" />
+      <p class="count"><span id="nickCount">0</span>/10자</p>
+    </section>
+    <section class="box">
+      <label for="intro">한 줄 소개 (최대 30자)</label>
+      <textarea id="intro" maxlength="30" placeholder="자기소개를 입력하세요"></textarea>
+      <p class="count"><span id="introCount">0</span>/30자</p>
+    </section>
+  </div>
+
+</body>
+
+</html>

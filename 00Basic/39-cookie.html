@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie & Storage - Javascript</title>
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+  <script src="./39-cookie.js" defer></script>
+  <link rel="stylesheet" href="./39-cookie.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <h2>저장하기</h2>
+    <form class="save-data">
+      <fieldset>
+        <legend>쿠키 관리</legend>
+        <input type="text" class="input-cookie" placeholder="쿠키에 저장하고 싶은 글을 작성하세요.">
+        <button type="submit" class="btn-set-cookie">쿠키 저장</button>
+      </fieldset>
+      <fieldset>
+        <legend>스토리지 관리</legend>
+        <input type="text" class="input-storage" placeholder="스토리지에 저장하고 싶은 글을 작성하세요.">
+        <button type="submit" class="btn-set-storage">스토리지 저장</button>
+      </fieldset>
+    </form>
+
+    <h2 class="mt50">불러오기</h2>
+    <form class="load-data">
+      <fieldset>
+        <legend>쿠키 불러오기</legend>
+        <button type="button" class="btn-load-cookie">쿠키 불러오기</button>
+        <div class="cookie-data"></div>
+      </fieldset>
+      <fieldset>
+        <legend>스토리지 불러오기</legend>
+        <button type="button" class="btn-load-storage">스토리지 불러오기</button>
+        <div class="storage-data"></div>
+      </fieldset>
+    </form>
+
+    <h2 class="mt50">삭제하기</h2>
+    <form class="load-data">
+      <fieldset>
+        <legend>쿠키 삭제하기</legend>
+        <button type="button" class="btn-delete-cookie">쿠키 삭제하기</button>
+      </fieldset>
+      <fieldset>
+        <legend>스토리지 삭제하기</legend>
+        <button type="button" class="btn-delete-storage">스토리지 삭제하기</button>
+      </fieldset>
+    </form>
+  </div>
+</body>
+
+</html>

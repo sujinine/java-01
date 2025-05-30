@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100vh;
+  padding: 30px;
+  gap: 30px;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+:is(hr, form) {
+  margin-block: 1.5rem;
+}
+
+button {
+  border-radius: 12px;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #3a86ff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(58, 134, 255, 0.3);
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #2e6ed9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(58, 134, 255, 0.4);
+}
+
+fieldset {
+  border: none;
+  padding: 30px;
+  display: grid;
+  gap: 16px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+fieldset legend {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0 16px;
+  margin-bottom: 10px;
+  color: #3a86ff;
+}
+
+fieldset :is(input, select) {
+  height: 50px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-inline: 20px;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  background-color: #f8f9fa;
+}
+
+fieldset :is(input, select):focus {
+  outline: none;
+  border-color: #3a86ff;
+  box-shadow: 0 0 0 2px rgba(58, 134, 255, 0.1);
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+.log {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  align-items: start;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: white;
+  border: none;
+  border-radius: 16px;
+  overflow: auto;
+  scrollbar-width: thin;
+  padding: 20px;
+  height: 90vh;
+  box-sizing: border-box;
+  align-self: start;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.message::-webkit-scrollbar {
+  width: 6px;
+}
+
+.message::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+.message div {
+  animation: fade 1 2s both;
+  line-height: 1.6;
+  word-break: break-all;
+  padding: 16px;
+  color: #333;
+  background-color: #f0f2f5;
+  border-radius: 12px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.message div:hover {
+  opacity: 1 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.target div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0.6;
+    transform: translateY(2px);
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+
+  fieldset {
+    background-color: #1e1e1e;
+  }
+
+  fieldset :is(input, select) {
+    background-color: #2d2d2d;
+    border-color: #444;
+    color: #e0e0e0;
+  }
+
+  .message {
+    background-color: #1e1e1e;
+  }
+
+  .message div {
+    background-color: #2d2d2d;
+    color: #e0e0e0;
+  }
+
+  button {
+    background-color: #3a86ff;
+  }
+
+  button:hover {
+    background-color: #2e6ed9;
+  }
+}

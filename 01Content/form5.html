@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form5</title>
+  <link rel="stylesheet" href="./css/form5.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <form>
+      <fieldset>
+        <legend>상담입력</legend>
+        <table class="table-type1">
+          <caption>
+            상담입력
+          </caption>
+          <colgroup>
+            <col style="width: 12rem" />
+            <col />
+          </colgroup>
+          <tbody>
+            <tr>
+              <th aria-label="필수입력">상품선택</th>
+              <td>
+                <div class="align left">
+                  <div class="check-list" aria-labelledby="check-guide">
+                    <input type="checkbox" class="checkbox" name="" id="chk1_1" />
+                    <label for="chk1_1">전체</label>
+                    <input type="checkbox" class="checkbox" name="" id="chk1_2" />
+                    <label for="chk1_2">리모델링</label>
+                    <input type="checkbox" class="checkbox" name="" id="chk1_3" />
+                    <label for="chk1_3">부엌</label>
+                    <input type="checkbox" class="checkbox" name="" id="chk1_4" />
+                    <label for="chk1_4">욕실</label>
+                    <input type="checkbox" class="checkbox" name="" id="chk1_5" />
+                    <label for="chk1_5">빌트인수납</label>
+                    <input type="checkbox" class="checkbox" name="" id="chk1_6" />
+                    <label for="chk1_6">가구</label>
+                  </div>
+                  <p class="text-type1 ml20" id="check-guide">
+                    *중복선택가능합니다.
+                  </p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th aria-label="필수입력"><label for="name">이름</label></th>
+              <td>
+                <input type="text" name="" id="name" placeholder="이름을 적어주세요" aria-describedby="name-guide"
+                  class="text-field" style="--width: 50rem" />
+                <p class="text-type1 mt8" id="name-guide">
+                  *정확한 상담을 위해 실명으로 부탁드립니다.
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <th aria-label="필수입력">주소</th>
+              <td>
+                <div class="address" style="--w: 50.7rem">
+                  <input type="number" name="" id="" placeholder="우편번호" class="text-field" aria-label="우편번호" readonly />
+                  <button class="btn-type1">검색</button>
+                  <input type="text" name="" id="" class="text-field" aria-label="상세주소" />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th aria-label="필수입력">연락처</th>
+              <td>
+                <div class="tel">
+                  <div class="select">
+                    <button type="button" popovertarget="tel" aria-label="전화번호 첫번째자리" role="combobox"
+                      aria-haspopup="listbox">
+                      선택해주세요
+                    </button>
+                    <ul popover id="tel" role="listbox">
+                      <li>
+                        <button type="button" popovertarget="tel" popovertargetaction="hide" aria-selected="false"
+                          role="option">
+                          010
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" popovertarget="tel" popovertargetaction="hide" aria-selected="false"
+                          role="option">
+                          02
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" popovertarget="tel" popovertargetaction="hide" aria-selected="false"
+                          role="option">
+                          043
+                        </button>
+                      </li>
+                      <li>
+                        <button type="button" popovertarget="tel" popovertargetaction="hide" aria-selected="false"
+                          role="option">
+                          031
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+                  <input type="tel" class="text-field" name="" id="" aria-label="전화번호 두번째자리" />
+                  <input type="tel" class="text-field" name="" id="" aria-label="전화번호 세번째자리" />
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </fieldset>
+    </form>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Payment" clip-path="url(#clip0_6683_852)">
+<path id="Vector" d="M41.6667 8.33337H8.33332C6.02082 8.33337 4.18749 10.1875 4.18749 12.5L4.16666 37.5C4.16666 39.8125 6.02082 41.6667 8.33332 41.6667H41.6667C43.9792 41.6667 45.8333 39.8125 45.8333 37.5V12.5C45.8333 10.1875 43.9792 8.33337 41.6667 8.33337ZM41.6667 37.5H8.33332V25H41.6667V37.5ZM41.6667 16.6667H8.33332V12.5H41.6667V16.6667Z" fill="black" fill-opacity="0.2"/>
+</g>
+<defs>
+<clipPath id="clip0_6683_852">
+<rect width="50" height="50" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,30 @@
+body {
+  width: 50vw;
+  margin-inline: auto;
+  padding: 20px;
+}
+label {
+  display: block;
+  margin: 10px 0 4px;
+}
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+button {
+  padding: 10px 16px;
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.output {
+  margin-top: 20px;
+  background: #f0f0f0;
+  padding: 12px;
+  border-radius: 6px;
+  font-family: monospace;
+}

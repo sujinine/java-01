@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폼1</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/form1.css">
+</head>
+
+<body>
+
+  <div class="wrapper login">
+    <h2 class="heading">로그인</h2>
+    <p class="discription">R.POINT 통합 회원은 리베서비스를 하나의 ID로 이용할 수 있습니다.</p>
+    <form>
+      <fieldset>
+        <legend>로그인</legend>
+        <label for="txt1_1">아이디</label>
+        <span>
+          <input type="email" id="txt1_1" placeholder="아이디 또는 이메일을 입력해주세요.">
+          <button class="btn-del" type="button" aria-label="아이디 입력된 정보삭제"></button>
+        </span>
+        <label for="txt1_2">비밀번호</label>
+        <span>
+          <input type="password" id="txt1_2" placeholder="비밀번호를 입력해주세요.">
+          <button class="btn-del" type="button" aria-label="비밀번호 입력된 정보삭제"></button>
+        </span>
+        <button type="submit" class="submit">로그인</button>
+      </fieldset>
+    </form>
+    <ul class="login-list">
+      <li>
+        <a href="">아이디찾기</a>
+      </li>
+      <li>
+        <a href="">비밀번호찾기</a>
+      </li>
+      <li>
+        <a href="">가입하기</a>
+      </li>
+    </ul>
+  </div>
+
+  <dialog class="popup">
+    <div class="popup-content">
+      <p id="popup-message">여기에 메시지가 들어갑니다.</p>
+      <button>닫기</button>
+    </div>
+  </dialog>
+
+
+</body>
+
+</html>

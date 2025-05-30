@@ -1,0 +1,168 @@
+body {
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    Tween                                   */
+/* -------------------------------------------------------------------------- */
+.tween {
+  text-align: center;
+  padding: 2rem 3rem 5rem;
+  span {
+    display: grid;
+    font-size: 1rem;
+    gap: 1rem;
+    color: slateblue;
+    justify-content: center;
+    &::before {
+      content: "";
+      width: 3rem;
+      border-bottom: 5px solid slateblue;
+      justify-self: center;
+    }
+  }
+  h2 {
+    font-size: 3rem;
+    color: #222;
+    padding-block: 1rem;
+  }
+  div {
+    padding-inline: 10%;
+    color: #666;
+    font-size: 1.3rem;
+    word-break: keep-all;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Delay & Repeat                               */
+/* -------------------------------------------------------------------------- */
+.delay {
+  padding: 5rem;
+  background-color: #f9f9f9;
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #222;
+    padding-block: 1rem;
+  }
+  > p {
+    text-align: center;
+    color: #666;
+    font-size: 1.3rem;
+    word-break: keep-all;
+  }
+  .list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    li {
+      display: grid;
+      gap: 0.5rem;
+    }
+    img {
+      width: 100%;
+      border-radius: 1rem;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+    }
+    svg {
+      width: 20px;
+    }
+    strong {
+      font-size: 1.2rem;
+    }
+    p {
+      color: #555;
+    }
+    div {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    Ease                                    */
+/* -------------------------------------------------------------------------- */
+.ease {
+  padding-block: 8rem;
+  text-align: center;
+  h2 {
+    font-size: 3rem;
+    color: #222;
+    padding-block: 1rem 3rem;
+  }
+  button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 10rem;
+    background-color: slateblue;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Stagger                                  */
+/* -------------------------------------------------------------------------- */
+.stagger {
+  padding: 5rem;
+  background-color: #f9f9f9;
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #222;
+    padding-block: 1rem;
+  }
+  .select {
+    display: grid;
+    grid-template-columns: 1fr min-content min-content min-content min-content;
+    gap: 1rem;
+    border-top: 1px solid #c1c1c1;
+    padding-top: 1rem;
+    select {
+      border: none;
+      background-color: transparent;
+      font-size: 1rem;
+      padding: 0.5rem;
+      &:first-child {
+        justify-self: start;
+      }
+    }
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    From                                    */
+/* -------------------------------------------------------------------------- */
+.from {
+  padding: 5rem;
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #222;
+    padding-block: 1rem;
+  }
+  .box {
+    width: 150px;
+    aspect-ratio: 1;
+    background-color: slateblue;
+    margin-inline: auto;
+  }
+}

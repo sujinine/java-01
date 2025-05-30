@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폼10</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/form10.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <form class="submit">
+      <fieldset>
+        <legend>게시물 입력</legend>
+        <table class="table-type10">
+          <caption>게시물 입력</caption>
+          <colgroup>
+            <col style="width:161px;">
+            <col>
+          </colgroup>
+          <tbody>
+            <tr>
+              <th>분류선택</th>
+              <td>
+                <div class="radio-group">
+                  <input type="radio" name="rag1" id="ra2_1"><label for="ra2_1">블로그 운영팁</label>
+                  <input type="radio" name="rag1" id="ra2_2"><label for="ra2_2">블로그 소개</label>
+                  <input type="radio" name="rag1" id="ra2_3"><label for="ra2_3">스킨</label>
+                  <input type="radio" name="rag1" id="ra2_4"><label for="ra2_4">기타</label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <th><label for="txt2_1">제목</label></th>
+              <td>
+                <input type="text" id="txt2_1" placeholder="제목을 입력하세요">
+                <div class="title-count">0/30</div>
+              </td>
+            </tr>
+            <tr>
+              <th><label for="txt2_2">내용</label></th>
+              <td>
+                <textarea id="txt2_2" rows="5" placeholder="내용을 입력하세요"></textarea>
+                <div class="content-count">0/1000</div>
+              </td>
+            </tr>
+            <tr>
+              <th><label for="txt2_3">파일첨부</label></th>
+              <td>
+                <input type="file" id="txt2_3">
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="btn-group">
+          <button type="reset" class="btn-reset">취소</button>
+          <button type="submit" class="btn-submit">등록</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</body>
+
+</html>
