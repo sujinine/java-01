@@ -8,7 +8,11 @@
 
 body {
   container: body / inline-size;
+<<<<<<< HEAD
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+=======
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, sans-serif;
+>>>>>>> af5e0b1c9e72058f7f0158aca8d27e7e022a533c
   color: var(--textPrimary);
 }
 
@@ -373,7 +377,11 @@ a {
     }
   }
 
+<<<<<<< HEAD
   input:not([type='radio'], [type='checkbox']) {
+=======
+  input:not([type="radio"], [type="checkbox"]) {
+>>>>>>> af5e0b1c9e72058f7f0158aca8d27e7e022a533c
     border: 1px solid var(--borderPrimary);
     height: 47px;
     border-radius: var(--radiusSmall);
@@ -435,7 +443,11 @@ a {
     backdrop-filter: blur(2px);
   }
 
+<<<<<<< HEAD
   input[type='file'] {
+=======
+  input[type="file"] {
+>>>>>>> af5e0b1c9e72058f7f0158aca8d27e7e022a533c
     height: auto;
     padding: 0;
     border-radius: 0;

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const message = document.querySelector('.message');
 const click = document.querySelector('.click');
 const enter = document.querySelector('.enter');
@@ -11,12 +12,28 @@ const target = document.querySelector('.target .parent');
 
 const log = function (text) {
   const div = document.createElement('div');
+=======
+const message = document.querySelector(".message");
+const click = document.querySelector(".click");
+const enter = document.querySelector(".enter");
+const leave = document.querySelector(".leave");
+const inputText = document.querySelector(".input input");
+const change = document.querySelector(".change select");
+const submit = document.querySelector(".submit");
+const submitID = document.querySelector(".submit .id");
+const submitNickname = document.querySelector(".submit .nickname");
+const target = document.querySelector(".target .parent");
+
+const log = function (text) {
+  const div = document.createElement("div");
+>>>>>>> af5e0b1c9e72058f7f0158aca8d27e7e022a533c
   div.innerHTML = text;
 
   message.appendChild(div);
   message.scrollTop = message.scrollHeight;
 };
 
+<<<<<<< HEAD
 click.addEventListener('click', function () {
   log('click');
 });
@@ -59,6 +76,45 @@ submit.addEventListener('submit', function (e) {
 target.addEventListener('click', function (e) {
   e.preventDefault();
   console.log(e);
+=======
+click.addEventListener("click", function () {
+  log("click");
+});
+
+enter.addEventListener("mouseenter", function () {
+  log("mouseenter");
+});
+
+leave.addEventListener("mouseleave", function () {
+  log("mouseleave");
+});
+
+inputText.addEventListener("input", function (e) {
+  log(e.target.value);
+});
+
+change.addEventListener("change", function (e) {
+  log(e.target.value);
+});
+
+submit.addEventListener("submit", function (e) {
+  console.log(e);
+
+  e.preventDefault();
+  const id = submitID.value;
+  const nickname = submitNickname.value;
+
+  if (id === "" || nickname === "") {
+    log("아이디 또는 닉네임을 입력하세요.");
+    return;
+  }
+
+  log("아이디:" + id + " / 닉네임:" + nickname);
+});
+
+target.addEventListener("click", function (e) {
+  e.preventDefault();
+>>>>>>> af5e0b1c9e72058f7f0158aca8d27e7e022a533c
 
   const isTarget = e.target.id;
   const isCurrentTarget = e.currentTarget.id;

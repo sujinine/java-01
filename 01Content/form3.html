@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form3</title>
+  <link rel="stylesheet" href="./css/form3.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav>
+      <ul class="tab-type1" role="tablist">
+        <li>
+          <button type="button" id="tab1_1" role="tab" aria-selected="true">
+            내국인
+          </button>
+        </li>
+        <li>
+          <button type="button" id="tab1_2" role="tab" aria-selected="false">
+            외국인 및 재외국민
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <div role="tabpanel" class="tab-panel-type1" aria-labelledby="tab1_1">
+      <form>
+        <fieldset>
+          <legend>내국인 아이디, 비밀번호 찾기</legend>
+          <div class="find-wrap">
+            <div>
+              <strong class="text-type1 text-primary">아이디(이메일) 찾기</strong>
+              <div class="form-find-group">
+                <div>
+                  <label for="form-name">성명</label>
+                  <input type="text" name="" class="text-field" id="form-name" />
+                </div>
+                <div>
+                  <label for="form-birth">생년월일</label>
+                  <input class="text-field" type="text" aria-labelledby="birth-example" name="" id="form-birth" />
+                  <p id="birth-example" class="text-type2">*예시:YYYY-MM-DD</p>
+                </div>
+              </div>
+              <div class="align right">
+                <button type="submit" class="btn-type1">찾기</button>
+              </div>
+            </div>
+            <div>
+              <strong class="text-type1 text-primary">비밀번호 찾기</strong>
+              <div class="form-find-group">
+                <div>
+                  <label for="form-email">아이디(이메일)</label>
+                  <input type="email" class="text-field" name="" id="form-email" />
+                </div>
+                <div>
+                  <label for="form-name4">이름</label>
+                  <input type="text" class="text-field" name="" id="form-name4" />
+                </div>
+                <div>
+                  <label for="form-birth-pw">생년월일</label>
+                  <input class="text-field" type="text" aria-labelledby="birth-example-pw" name="" id="form-birth-pw" />
+                  <p id="birth-example-pw" class="text-type2">
+                    *예시:YYYY-MM-DD
+                  </p>
+                </div>
+              </div>
+              <div class="align right">
+                <button type="submit" class="btn-type1">찾기</button>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <div role="tabpanel" class="tab-panel-type1" aria-labelledby="tab1_2">
+      <form>
+        <fieldset>
+          <legend>외국인 및 재외국민 아이디, 비밀번호 찾기</legend>
+          <div class="find-wrap">
+            <div>
+              <strong class="text-type1 text-primary">아이디(이메일) 찾기</strong>
+              <div class="form-find-group">
+                <div>
+                  <label for="form-name2">성명</label>
+                  <input type="text" name="" class="text-field" id="form-name2" />
+                </div>
+                <div>
+                  <label for="form-birth2">외국인등록번호</label>
+                  <input class="text-field" type="number" name="" id="form-birth2" />
+                </div>
+              </div>
+              <div class="align right">
+                <button type="submit" class="btn-type1">찾기</button>
+              </div>
+            </div>
+            <div>
+              <strong class="text-type1 text-primary">비밀번호 찾기</strong>
+              <div class="form-find-group">
+                <div>
+                  <label for="form-email2">아이디(이메일)</label>
+                  <input type="email" class="text-field" name="" id="form-email2" />
+                </div>
+                <div>
+                  <label for="form-name3">이름</label>
+                  <input type="text" class="text-field" name="" id="form-name3" />
+                </div>
+                <div>
+                  <label for="form-birth-pw2">외국인등록번호</label>
+                  <input class="text-field" type="number" name="" id="form-birth-pw2" />
+                </div>
+              </div>
+              <div class="align right">
+                <button type="submit" class="btn-type1">찾기</button>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

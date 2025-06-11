@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>표6</title>
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/table6.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <table class="table-type6">
+      <caption>
+        보험상품정보
+      </caption>
+      <colgroup>
+        <col style="width: 230px" />
+        <col />
+      </colgroup>
+      <tbody>
+        <tr>
+          <th>보험상품명</th>
+          <td>보험상품명</td>
+        </tr>
+        <tr>
+          <th>계약자, 피보험자</th>
+          <td>계약자와 피보험자가 동일한 경우에만 계약이 가능</td>
+        </tr>
+        <tr>
+          <th>가입 연령 <button class="btn-info" aria-label="자세한 정보보기"></button></th>
+          <td>만 19세 - 69세</td>
+        </tr>
+        <tr>
+          <th>보험기간</th>
+          <td>3, 10년만기</td>
+        </tr>
+        <tr>
+          <th>보험료 납입기간</th>
+          <td>
+            <p>3년만기 : 1년납, 2년납,전기납</p>
+            <p>10년만기 : 2년납, 3년납, 5년납, 전기납</p>
+          </td>
+        </tr>
+        <tr>
+          <th>기본 보험료</th>
+          <td>1구좌 기준 1만원 이상 100만원 이하</td>
+        </tr>
+        <tr>
+          <th>가입한도</th>
+          <td>
+            <p>(모바일) 1만원 이상</p>
+            <p>(PC) 5만원 이상</p>
+          </td>
+        </tr>
+        <tr>
+          <th>보험료 납입주기</th>
+          <td>기본보험료:월납 추가납입보험료:수시납 (매월 계약해당일 기준 월 4회에 한함)</td>
+        </tr>
+        <tr>
+          <th>해지환급금 <button class="btn-info" aria-label="자세한 정보보기"></button></th>
+          <td><a href="" target="_blank">해지환급금 예시표 보기</a></td>
+        </tr>
+        <tr>
+          <th>특약</th>
+          <td>특정신체부위 질병보장 제한부 인수특약, 표준하체인수특약, 지정대리청구서비스특약 연금전환특약Ⅱ(무) <a href="" target="_blank">자세히보기</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <dialog class="dialog">
+      <div class="dialog__header">
+        <h2>연금전환특약</h2>
+        <button class="btn-close" aria-label="팝업닫기"></button>
+      </div>
+      <div class="dialog__content">
+        <p class="text-type1">연금전환특약의 정의와 신청방법, 구비서류 등을 안내해 드립니다.</p>
+        <ul class="list-type1 mt10">
+          <li>연금보험이 아닌 상품(저축성보험 등)의 보험기간이 만료되기 전 해약환급금을 연금지급 재원으로 하여 연금을 수령할 수 있는 제도 입니다.</li>
+          <li>
+            연금전환 전 계약이 아래의 조건을 모두 만족할 경우에 가능합니다.
+            <ul>
+              <li>a. 전환전 계약 지급금의 전부 또는 일부 금액이 100만원 이상</li>
+              <li>b. 전환전 계약이 계약일 이후 5년 이상 지난 유효한 계약</li>
+              <li>c. 주피보험자의 나이가 만45세~80세인 경우</li>
+            </ul>
+          </li>
+          <li>보다 자세한 사항은 연금전환특약의 약관 및 사업방법서를 참고하시기 바랍니다.</li>
+        </ul>
+      </div>
+    </dialog>
+
+    <dialog class="dialog">
+      <div class="dialog__header">
+        <h2>해지환급금</h2>
+        <button class="btn-close" aria-label="팝업닫기"></button>
+      </div>
+      <div class="dialog__content">
+        <p class="text-type1">계약의 해지에 따라 중앙회가 계약자에게 환급하는 금액을 말하며, 공제금 지급사유 이외의 일정 사유에 의한 간주해약과 계약자 본인의 의사표시에 의한 일반해약으로
+          구분됩니다.</p>
+        <table class="table-type6 text-center mt20">
+          <caption>해지환급금 예시표</caption>
+          <colgroup>
+            <col style="width:25%;">
+            <col style="width:25%;">
+            <col style="width:25%;">
+            <col style="width:25%;">
+          </colgroup>
+          <thead>
+            <tr>
+              <th>경과기간</th>
+              <th>납입보험료 합계</th>
+              <th>해지환급금</th>
+              <th>환급률</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="text-center">1년</th>
+              <td>302,400</td>
+              <td>0</td>
+              <td>0.0%</td>
+            </tr>
+            <tr>
+              <th class="text-center">2년</th>
+              <td>604,800</td>
+              <td>0</td>
+              <td>0.0%</td>
+            </tr>
+            <tr>
+              <th class="text-center">3년</th>
+              <td>907,200</td>
+              <td>51,691</td>
+              <td>5.7%</td>
+            </tr>
+            <tr>
+              <th class="text-center">5년</th>
+              <td>1,512,000</td>
+              <td>197,610</td>
+              <td>13.1%</td>
+            </tr>
+            <tr>
+              <th class="text-center">10년</th>
+              <td>3,024,000</td>
+              <td>0</td>
+              <td>0.0%</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="text-type2 mt10">주계약 2,500만원, (무)계약받는암보장특약(갱신형) 1,000만원, (무)고액암치료특약 2,500만원, 40세 남자, 암 미발생자, 만기환급금이 없는
+          순수보장형,
+          최초계약, 10년만기, 전기월납
+          (단위:원)</p>
+      </div>
+    </dialog>
+  </div>
+</body>
+
+</html>

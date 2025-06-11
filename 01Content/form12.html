@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폼12</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/form12.css">
+</head>
+
+<body>
+  <div class="wrapper align">
+    <section class="box">
+      <h2>관심 있는 항목을 선택하세요</h2>
+      <ul>
+        <li><input type="checkbox" class="interest" id="chk1_1" /><label for="chk1_1">여행</label></li>
+        <li><input type="checkbox" class="interest" id="chk1_2" /><label for="chk1_2">음식</label></li>
+        <li><input type="checkbox" class="interest" id="chk1_3" /><label for="chk1_3">음악</label></li>
+        <li><input type="checkbox" class="interest" id="chk1_4" /><label for="chk1_4">영화</label></li>
+      </ul>
+      <button class="a">선택 초기화</button>
+    </section>
+
+    <section class="box">
+      <h2>오늘 기분은 어떤가요?</h2>
+      <ul class="aa">
+        <li><input type="radio" name="mood" class="mood" id="ra1_1" /><label for="ra1_1">😊 좋음</label></li>
+        <li><input type="radio" name="mood" class="mood" id="ra1_2" /><label for="ra1_2">😐 보통</label></li>
+        <li><input type="radio" name="mood" class="mood" id="ra1_3" /><label for="ra1_3">😞 나쁨</label></li>
+      </ul>
+      <button class="bb">선택 완료</button>
+      <p class="message"></p>
+    </section>
+
+    <section class="box">
+      <h2>Q. HTML의 의미는?</h2>
+      <ul>
+        <li><input type="radio" name="quiz" class="quiz" value="a" id="ra2_1" /><label for="ra2_1">Hyper Text Marker
+            Line</label></li>
+        <li><input type="radio" name="quiz" class="quiz" value="b" id="ra2_2" /><label for="ra2_2">Hyper Text Markup
+            Language</label></li>
+        <li><input type="radio" name="quiz" class="quiz" value="c" id="ra2_3" /><label for="ra2_3">Home Tool Markup
+            Link</label></li>
+      </ul>
+      <button>정답 확인</button>
+      <p class="message"></p>
+    </section>
+
+
+  </div>
+
+</body>
+
+</html>
