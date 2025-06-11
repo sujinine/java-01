@@ -1,0 +1,8 @@
+{
+  "user": {
+    "id": 1,
+    "name": "하성필",
+    "hobbies": ["reading", "traveling", "coding"]
+  },
+  "isActive": true
+}

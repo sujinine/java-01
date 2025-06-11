@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폼7</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/form7.css" />
+    <script src="./js/form7.js" defer></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <form class="join">
+        <div class="align both">
+          <legend>필수 정보</legend>
+          <p class="tip"><span class="color-primary">*</span> 필수 입력 항목입니다.</p>
+        </div>
+        <fieldset>
+          <table class="table-type7">
+            <caption>
+              회원가입 필수 정보
+            </caption>
+            <colgroup>
+              <col style="width: 140px" />
+              <col />
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>
+                  <label for="txt7_1">아이디 <span class="color-primary">*</span></label>
+                </th>
+                <td>
+                  <input type="text" id="txt7_1" />
+                  <button type="button" class="btn-white">중복확인</button>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <label for="txt7_2">패스워드 <span class="color-primary">*</span></label>
+                </th>
+                <td>
+                  <input type="password" id="txt7_2" minlength="8" maxlength="16" />
+                  <p class="text-type1">※비밀번호는 영문/숫자/특수문자를 조합하여 8~16자로 입력해주세요.</p>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <label for="txt7_3">패스워드 확인<span class="color-primary">*</span></label>
+                </th>
+                <td>
+                  <input type="password" id="txt7_3" minlength="8" maxlength="16" />
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <label for="txt7_4">이름 <span class="color-primary">*</span></label>
+                </th>
+                <td><input type="text" id="txt7_4" /></td>
+              </tr>
+              <tr>
+                <th>휴대전화 <span class="color-primary">*</span></th>
+                <td>
+                  <select title="휴대전화 첫번째 자리">
+                    <option value="">선택</option>
+                    <option value="">010</option>
+                  </select>
+                  -
+                  <input type="tel" title="휴대전화 두번째 자리" />
+                  -
+                  <input type="tel" title="휴대전화 세번째 자리" />
+                </td>
+              </tr>
+              <tr>
+                <th>이메일 <span class="color-primary">*</span></th>
+                <td>
+                  <div class="email">
+                    <input type="text" title="이메일 아이디" />
+                    @
+                    <input type="text" class="domain" readonly title="이메일 도메인" />
+                    <select title="이메일 도메인">
+                      <option value="" class="directInput">직접입력</option>
+                      <option value="naver.com" selected>naver.com</option>
+                      <option value="gmail.com">gmail.com</option>
+                      <option value="hanmail.net">hanmail.net</option>
+                      <option value="nate.com">nate.com</option>
+                    </select>
+                  </div>
+                  <p class="text-type1">※ 기업 그룹웨어 메일인 경우 문자가 깨질수도 있습니다. 한메일 사용자의 경우 수신이 원할하지 않을수 있습니다.</p>
+                </td>
+              </tr>
+              <tr>
+                <th>주소 <span class="color-primary">*</span></th>
+                <td>
+                  <div class="address">
+                    <input type="number" readonly title="우편번호" />
+                    <button type="button" class="btn-white">우편 번호 검색</button>
+                    <input type="text" title="기본주소" readonly />
+                    <input type="text" title="상세주소" />
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+
+        <fieldset class="mt60">
+          <legend>선택 정보</legend>
+          <table class="table-type7">
+            <caption>
+              회원가입 선택 정보
+            </caption>
+            <colgroup>
+              <col style="width: 140px" />
+              <col />
+            </colgroup>
+            <tbody>
+              <tr>
+                <th><label for="txt7_2_1">추천인 아이디</label></th>
+                <td>
+                  <input type="text" id="txt7_2_1" />
+                  <button type="button" class="btn-white btn-white-a">추천인 아이디확인</button>
+                  <p id="message"></p>
+                </td>
+              </tr>
+              <tr>
+                <th><label for="txt7_2_2">생년월일</label></th>
+                <td><input type="date" id="txt7_2_2" /></td>
+              </tr>
+              <tr>
+                <th>성별</th>
+                <td>
+                  <input type="radio" name="gender" id="ra7_1" />
+                  <label for="ra7_1">남</label>
+                  <input type="radio" name="gender" id="ra7_2" />
+                  <label for="ra7_2">여</label>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </fieldset>
+        <div class="align center btns mt50">
+          <button type="button" class="btn-black">취소</button>
+          <button type="button" class="btn-red">회원가입 완료</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

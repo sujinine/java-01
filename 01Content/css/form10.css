@@ -1,0 +1,103 @@
+:root {
+  --gray50: #e7e8ea;
+  --gray100: #dee1e4;
+  --gray500: #787878;
+  --gray800: #323232;
+  --gray900: #24282b;
+  --red: #ed2542;
+  --black: #000;
+  --white: #fff;
+}
+
+input[type="radio"] {
+  overflow: hidden;
+  position: absolute;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  + label {
+    display: inline-block;
+    align-content: center;
+    background: url(../images/ico_radio_off.svg) no-repeat left;
+    padding-inline: 25px 10px;
+    height: 20px;
+    line-height: 1;
+  }
+  &:checked {
+    + label {
+      background: url(../images/ico_radio_on.svg) no-repeat left;
+    }
+  }
+}
+
+.btn-reset {
+  padding-inline: 20px;
+  height: 40px;
+  border: 1px solid var(--gray800);
+  background: var(--white);
+  color: var(--gray800);
+  font-size: 13px;
+  font-weight: 400;
+  min-width: 100px;
+  border-radius: 1000px;
+}
+.btn-submit {
+  min-width: 100px;
+  padding-inline: 20px;
+  height: 40px;
+  color: var(--white);
+  font-size: 13px;
+  background: var(--red);
+  border-radius: 1000px;
+}
+
+.btn-group {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.table-type10 {
+  border-top: 1px solid var(--gray800);
+  tr {
+    border-bottom: 1px solid var(--gray50);
+  }
+  th,
+  td {
+    padding: 9px;
+  }
+  th {
+    color: var(--gray800);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+  }
+}
+
+input {
+  &:not([type="checkbox"], [type="radio"], [type="file"]) {
+    width: 100%;
+    padding-inline: 10px;
+    height: 40px;
+    border: 1px solid var(--gray100);
+    background-color: var(--white);
+  }
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--gray100);
+  background-color: var(--white);
+  resize: vertical;
+}
+
+[class*="count"] {
+  font-size: 14px;
+  color: var(--gray500);
+  text-align: right;
+  padding-top: 5px;
+}

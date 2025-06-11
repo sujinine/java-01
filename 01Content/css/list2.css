@@ -1,0 +1,120 @@
+@layer Reset, Variable, Components, Layout, Utillity;
+
+@import url(./reset.css) layer(Reset);
+
+@layer Variable {
+  :root {
+    --gray500: #666666;
+    --gray100: #c7c7c7;
+
+    --black: #000;
+    --white: #fff;
+  }
+}
+
+@layer Layout {
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1rem;
+    padding: 50px;
+  }
+}
+
+@layer Components {
+  @layer Typography {
+    .text-type1 {
+      color: var(--black);
+      font-size: 3.7rem;
+    }
+    .text-type2 {
+      color: var(--gray500);
+      font-size: 2rem;
+    }
+    .text-type3 {
+      color: var(--black);
+      font-size: 1.9rem;
+      font-weight: 500;
+    }
+    .heading-type1 {
+      display: grid;
+      padding-block: 0.3rem 0.7rem;
+    }
+  }
+  @layer History {
+    .history {
+      display: flex;
+      gap: 12.6rem;
+      /* margin-top: 4.3rem; */
+      > img {
+        width: 50rem;
+        height: 33.3rem;
+        object-fit: cover;
+        border-radius: 1.6rem;
+      }
+      .list {
+        display: grid;
+        > li {
+          display: grid;
+          gap: 1rem;
+          padding-left: 3.5rem;
+          background: linear-gradient(var(--gray100), var(--gray100)) no-repeat left var(--top, 0) / 1px var(--height, 100%);
+          + li {
+            padding-top: 6rem;
+          }
+          &:first-child {
+            --top: 1.8rem;
+            strong {
+              &::before {
+                width: 1.3rem;
+                border: 2px solid var(--black);
+                background: var(--white);
+                box-sizing: border-box;
+                inset-inline-start: -4.1rem;
+              }
+            }
+          }
+          &:last-child {
+            --height: 7.8rem;
+          }
+          > strong {
+            position: relative;
+            color: var(--black);
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            &::before {
+              position: absolute;
+              inset: 50% auto auto -3.9rem;
+              translate: 0 -50%;
+              content: "";
+              width: 0.9rem;
+              aspect-ratio: 1;
+              border-radius: calc(infinity * 1rem);
+              background: var(--black);
+            }
+          }
+          > div {
+            color: var(--gray500);
+            font-size: 1.5rem;
+            a {
+              display: flex;
+              gap: 0.5rem;
+              align-items: center;
+              font-weight: 700;
+              &::after {
+                content: url(../images/ico_img.svg);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@layer Utillity {
+  .mt43 {
+    margin-top: 4.3rem;
+  }
+}

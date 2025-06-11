@@ -1,0 +1,201 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #1d1d1f;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+::placeholder {
+  color: inherit;
+  opacity: 0.6;
+}
+
+.character {
+  position: relative;
+  isolation: isolate;
+  text-align: center;
+  margin: 20px auto;
+
+  img {
+    width: 45%;
+  }
+
+  &::after {
+    content: "";
+    background-color: #e3f2fd;
+    position: absolute;
+    z-index: -1;
+    inset: 30px 150px;
+    border-radius: 60px;
+    transform: skew(-1deg, -0.5deg);
+    border: 1px solid rgba(135, 206, 250, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  .name {
+    position: absolute;
+    inset: auto auto 15px 50%;
+    translate: -50%;
+    white-space: nowrap;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 12px 30px;
+    backdrop-filter: blur(20px);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: #1d1d1f;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  > div {
+    border-radius: 30px;
+    padding: 12px 25px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(10px);
+  }
+
+  body[style*="-color: black"] & > div {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(25px);
+    color: white;
+  }
+
+  button {
+    align-content: center;
+    width: 30px;
+    aspect-ratio: 1;
+    font-size: 0;
+    transition: transform 0.2s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &.active svg {
+      fill: #0066cc;
+    }
+  }
+}
+
+.nickname {
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  padding-block: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  body[style*="-color: black"] & button {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+
+  svg {
+    width: 24px;
+    fill: #0066cc;
+  }
+}
+
+.toggle {
+  background: url(./images/bell.svg) no-repeat center / 24px;
+  transition: all 0.2s ease;
+
+  &.active {
+    background: url(./images/bell-slash.svg) no-repeat center / 24px;
+  }
+}
+
+.promotion {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr min-content;
+  gap: 15px;
+  padding-block: 50px 0;
+
+  input {
+    height: 44px;
+    padding-inline: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  body[style*="-color: black"] & input {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+  }
+
+  button {
+    white-space: nowrap;
+    border: none;
+    padding: 0 20px;
+    border-radius: 10px;
+    background-color: #0066cc;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    height: 44px;
+
+    &:hover {
+      background-color: #0055b5;
+      transform: translateY(-1px);
+    }
+  }
+
+  div {
+    grid-column: span 2;
+    grid-row: 2/3;
+    height: 30px;
+    color: #fb5446;
+    align-content: center;
+    animation: indent 0.5s infinite alternate cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-size: 14px;
+  }
+}
+
+@keyframes indent {
+  100% {
+    text-indent: 5px;
+  }
+}

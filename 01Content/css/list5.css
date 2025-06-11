@@ -1,0 +1,113 @@
+@layer Reset, Variable, Components, Layout, Utillity;
+
+@import url(./reset.css) layer(Reset);
+
+@layer Variable {
+  :root {
+    --gray900: #111111;
+    --gray500: #666666;
+    --gray200: #cfcfcf;
+
+    --green500: #20c85a;
+
+    --black: #000;
+    --white: #fff;
+  }
+}
+
+@layer Layout {
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1rem;
+    padding: 50px;
+  }
+  .wrapper {
+    min-width: 70vw;
+  }
+}
+
+@layer Components {
+  @layer Button {
+    .btn-type1 {
+      padding-inline: 3.15rem;
+      color: var(--white);
+      height: 4.8rem;
+      font-size: 1.6rem;
+      border-radius: 0.4rem;
+      background: var(--green500);
+    }
+  }
+
+  @layer List {
+    .list-type1 {
+      border-top: 2px solid var(--gray900);
+      details {
+        border-bottom: 1px solid var(--gray200);
+        &[open] {
+          --toggle: url(../images/ico_toggle_off.svg);
+        }
+      }
+      summary {
+        padding: 5.1rem 7.1rem 3.7rem 12.05rem;
+        min-height: 5rem;
+        align-content: center;
+        color: var(--black);
+        font-size: 2.3rem;
+        list-style: none;
+        background: var(--bg) no-repeat 1.8rem center, var(--toggle, url(../images/ico_toggle.svg)) no-repeat right 1.8rem center;
+      }
+      .ico1 summary {
+        --bg: url(../images/ico_list1.svg);
+      }
+      .ico2 summary {
+        --bg: url(../images/ico_list2.svg);
+      }
+      .ico3 summary {
+        --bg: url(../images/ico_list3.svg);
+      }
+      .ico4 summary {
+        --bg: url(../images/ico_list4.svg);
+      }
+
+      .content {
+        padding: 0 14.6rem 5.1rem 8.9rem;
+      }
+    }
+    .list-type2 {
+      display: grid;
+      gap: 1.7rem;
+      color: var(--gray500);
+      font-size: 1.9rem;
+      letter-spacing: -0.057rem;
+      li {
+        position: relative;
+        padding-left: 2rem;
+        &::before {
+          position: absolute;
+          left: 0.5rem;
+          top: 1rem;
+          content: "";
+          width: 0.5rem;
+          aspect-ratio: 1;
+          border-radius: calc(infinity * 1rem);
+          background-color: var(--gray500);
+        }
+      }
+    }
+  }
+}
+
+@layer Utillity {
+  .align {
+    display: flex;
+    &.right {
+      justify-content: end;
+    }
+  }
+
+  .mt26 {
+    margin-top: 2.6rem;
+  }
+}

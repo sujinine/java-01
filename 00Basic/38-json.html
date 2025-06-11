@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON - Javascript</title>
+  <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+  <script src="./38-json.js" defer></script>
+  <link rel="stylesheet" href="./38-json.css">
+</head>
+
+<body>
+
+  <label for="name">이름</label>
+  <input type="text" id="name" placeholder="예: Rebehayan">
+  <label for="age">나이</label>
+  <input type="number" id="age" placeholder="예: 45">
+  <button onclick="handleObject()">JSON데이터로 내보내기</button>
+
+  <div style="margin-top: 5rem;">
+    <textarea name="" id="" rows="7" cols="50">
+      {
+        "name": "하성필",
+        "age": 30,
+        "isStudent": false
+      }
+    </textarea>
+  </div>
+  <button onclick="data()">외부 JSON 데이터 받기</button>
+  <button onclick="handleJSONOBJ()">JSON문자를 객체로</button>
+
+</body>
+
+</html>

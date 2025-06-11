@@ -1,0 +1,622 @@
+[
+  {
+    "title": "basic",
+    "depth": [
+      {
+        "title": "Basic Part1",
+        "nav": [
+          {
+            "name": "시작",
+            "link": "01-start.html"
+          },
+          {
+            "name": "변수",
+            "link": "02-variable.html"
+          },
+          {
+            "name": "데이터종류",
+            "link": "03-data.html"
+          },
+          {
+            "name": "연산자",
+            "link": "03-1-operator.html"
+          },
+          {
+            "name": "참과 거짓",
+            "link": "03-2-truthy-falsy.html"
+          },
+          {
+            "name": "함수",
+            "link": "04-function.html"
+          },
+          {
+            "name": "조건식",
+            "link": "05-if.html"
+          },
+          {
+            "name": "이벤트",
+            "link": "06-event.html"
+          },
+          {
+            "name": "DOM",
+            "link": "07-DOM.html"
+          }
+        ]
+      },
+      {
+        "title": "Basic Part2",
+        "nav": [
+          {
+            "name": "객체 구조분해할당",
+            "link": "08-Object.html"
+          },
+          {
+            "name": "표준내장객체 숫자",
+            "link": "10-number.html"
+          },
+          {
+            "name": "표준내장객체 문자",
+            "link": "10-number.html"
+          },
+          {
+            "name": "표준내장객체 수학",
+            "link": "10-math.html"
+          },
+          {
+            "name": "표준내장객체 날짜",
+            "link": "10-date.html"
+          },
+          {
+            "name": "Switch",
+            "link": "11-switch.html"
+          },
+          {
+            "name": "반복문",
+            "link": "11-for.html"
+          },
+          {
+            "name": "함수",
+            "link": "12-function.html"
+          },
+          {
+            "name": "배열",
+            "link": "13-array.html"
+          },
+          {
+            "name": "이벤트",
+            "link": "14-event.html"
+          },
+          {
+            "name": "DOM",
+            "link": "15-DOM.html"
+          },
+          {
+            "name": "Location",
+            "link": "16-location.html"
+          },
+          {
+            "name": "History",
+            "link": "17-history.html"
+          },
+          {
+            "name": "Module",
+            "link": "18-module.html"
+          }
+        ]
+      },
+      {
+        "title": "Basic Part3",
+        "nav": [
+          {
+            "name": "클래스(Class)",
+            "link": "30-class.html"
+          },
+          {
+            "name": "동기 vs 비동기",
+            "link": "31-sync.html"
+          },
+          {
+            "name": "콜백지옥",
+            "link": "32-callback.html"
+          },
+          {
+            "name": "Promise",
+            "link": "33-promise.html"
+          },
+          {
+            "name": "Async Await",
+            "link": "34-async.html"
+          },
+          {
+            "name": "Resolve, Reject",
+            "link": "35-resolve.html"
+          },
+          {
+            "name": "Fetch",
+            "link": "36-fetch.html"
+          },
+          {
+            "name": "정규식",
+            "link": "37-regex.html"
+          },
+          {
+            "name": "JSON",
+            "link": "38-json.html"
+          },
+          {
+            "name": "쿠키와 스토리지",
+            "link": "39-cookie.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "content",
+    "depth": [
+      {
+        "title": "표",
+        "nav": [
+          {
+            "name": "표1",
+            "link": "table1.html"
+          },
+          {
+            "name": "표2",
+            "link": "table2.html"
+          },
+          {
+            "name": "표4",
+            "link": "table4.html"
+          },
+          {
+            "name": "표6",
+            "link": "table6.html"
+          },
+          {
+            "name": "표7",
+            "link": "table7.html"
+          },
+          {
+            "name": "표8",
+            "link": "table8.html"
+          }
+        ]
+      },
+      {
+        "title": "리스트",
+        "nav": [
+          {
+            "name": "리스트1",
+            "link": "list1.html"
+          },
+          {
+            "name": "리스트2",
+            "link": "list2.html"
+          },
+          {
+            "name": "리스트3",
+            "link": "list3.html"
+          },
+          {
+            "name": "리스트4",
+            "link": "list4.html"
+          },
+          {
+            "name": "리스트5",
+            "link": "list5.html"
+          },
+          {
+            "name": "리스트6",
+            "link": "list6.html"
+          },
+          {
+            "name": "리스트7",
+            "link": "list7.html"
+          },
+          {
+            "name": "리스트8",
+            "link": "list8.html"
+          },
+          {
+            "name": "리스트9",
+            "link": "list9.html"
+          },
+          {
+            "name": "리스트11",
+            "link": "list11.html"
+          },
+          {
+            "name": "리스트14",
+            "link": "list14.html"
+          }
+        ]
+      },
+      {
+        "title": "폼",
+        "nav": [
+          {
+            "name": "폼1",
+            "link": "form1.html"
+          },
+          {
+            "name": "폼2",
+            "link": "form2.html"
+          },
+          {
+            "name": "폼3",
+            "link": "form3.html"
+          },
+          {
+            "name": "폼4",
+            "link": "form4.html"
+          },
+          {
+            "name": "폼5",
+            "link": "form5.html"
+          },
+          {
+            "name": "폼6",
+            "link": "form6.html"
+          },
+          {
+            "name": "폼7",
+            "link": "form7.html"
+          },
+          {
+            "name": "폼8",
+            "link": "form8.html"
+          },
+          {
+            "name": "폼9",
+            "link": "form9.html"
+          },
+          {
+            "name": "폼10",
+            "link": "form10.html"
+          },
+          {
+            "name": "폼11",
+            "link": "form11.html"
+          },
+          {
+            "name": "폼12",
+            "link": "form12.html"
+          },
+          {
+            "name": "폼13",
+            "link": "form13.html"
+          }
+        ]
+      },
+      {
+        "title": "콘텐츠",
+        "nav": [
+          {
+            "name": "콘텐츠1",
+            "link": "content1.html"
+          },
+          {
+            "name": "콘텐츠2",
+            "link": "content2.html"
+          },
+          {
+            "name": "콘텐츠3",
+            "link": "content3.html"
+          },
+          {
+            "name": "콘텐츠4",
+            "link": "content4.html"
+          },
+          {
+            "name": "콘텐츠5",
+            "link": "content5.html"
+          },
+          {
+            "name": "콘텐츠6",
+            "link": "content6.html"
+          },
+          {
+            "name": "콘텐츠7",
+            "link": "content7.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "website project",
+    "depth": [
+      {
+        "title": "기본 페이지",
+        "nav": [
+          {
+            "name": "스타일가이드",
+            "link": "pages/style.html"
+          },
+          {
+            "name": "메인",
+            "link": "main.html"
+          }
+        ]
+      },
+      {
+        "title": "러닝라운지",
+        "nav": [
+          {
+            "name": "리스트",
+            "link": "pages/learning1-1.html"
+          },
+          {
+            "name": "상세보기",
+            "link": "pages/learning1-2.html"
+          },
+          {
+            "name": "글쓰기",
+            "link": "pages/learning1-3.html"
+          }
+        ]
+      },
+      {
+        "title": "커뮤니티",
+        "nav": [
+          {
+            "name": "공지사항 리스트",
+            "link": "pages/learning2-1.html"
+          },
+          {
+            "name": "공지사항 상세보기",
+            "link": "pages/learning2-2.html"
+          },
+          {
+            "name": "자유게시판 리스트",
+            "link": "pages/learning2-3.html"
+          },
+          {
+            "name": "자유게시판 상세보기",
+            "link": "pages/learning2-4.html"
+          },
+          {
+            "name": "자유게시판 글쓰기",
+            "link": "pages/learning2-5.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "mobile project",
+    "depth": [
+      {
+        "title": "기본 페이지",
+        "nav": [
+          {
+            "name": "스타일가이드",
+            "link": "pages/style.html"
+          },
+          {
+            "name": "메인",
+            "link": "main.html"
+          }
+        ]
+      },
+      {
+        "title": "온라인교육",
+        "nav": [
+          {
+            "name": "갤러리보기",
+            "link": "pages/mao-01.html"
+          },
+          {
+            "name": "리스트보기",
+            "link": "pages/mao-02.html"
+          },
+          {
+            "name": "카드보기",
+            "link": "pages/mao-03.html"
+          },
+          {
+            "name": "상세보기/수료기준",
+            "link": "pages/mao-05.html"
+          },
+          {
+            "name": "상세보기/과정소개",
+            "link": "pages/mao-07.html"
+          },
+          {
+            "name": "상세보기/과정목차",
+            "link": "pages/mao-08.html"
+          },
+          {
+            "name": "수강신청",
+            "link": "pages/mao-10.html"
+          }
+        ]
+      },
+      {
+        "title": "커뮤니티",
+        "nav": [
+          {
+            "name": "리스트",
+            "link": "pages/mma-06.html"
+          },
+          {
+            "name": "리스트2",
+            "link": "pages/mma-07.html"
+          },
+          {
+            "name": "글쓰기",
+            "link": "pages/mma-08.html"
+          },
+          {
+            "name": "글쓰기2",
+            "link": "pages/mma-09.html"
+          },
+          {
+            "name": "상세보기",
+            "link": "pages/mma-10.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "responsive project",
+    "depth": [
+      {
+        "title": "기본 페이지",
+        "nav": [
+          {
+            "name": "스타일가이드",
+            "link": "pages/style.html"
+          },
+          {
+            "name": "메인",
+            "link": "pages/main.html"
+          },
+          {
+            "name": "로그인",
+            "link": "pages/login.html"
+          }
+        ]
+      },
+      {
+        "title": "소년소녀부",
+        "nav": [
+          {
+            "name": "선생님과의 역사",
+            "link": "pages/sub1_1.html"
+          },
+          {
+            "name": "활동방향",
+            "link": "pages/sub1_2.html"
+          }
+        ]
+      },
+      {
+        "title": "미래본부 및 사명회",
+        "nav": [
+          {
+            "name": "공지사항 리스트",
+            "link": "pages/sub3_1.html"
+          },
+          {
+            "name": "메뉴얼 및 조직도",
+            "link": "pages/sub3_5.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "swiper",
+    "nav": [
+      {
+        "name": "Basic",
+        "link": "01-Basic.html"
+      },
+      {
+        "name": "Object",
+        "link": "02-Object.html"
+      },
+      {
+        "name": "AutoPlay",
+        "link": "03-Autoplay.html"
+      },
+      {
+        "name": "Pagination",
+        "link": "04-Pagination.html"
+      },
+      {
+        "name": "Responsive",
+        "link": "05-Responsive.html"
+      },
+      {
+        "name": "Deep Link",
+        "link": "06-Deeplink.html"
+      },
+      {
+        "name": "Data Bind",
+        "link": "07-Databind.html"
+      }
+    ]
+  },
+  {
+    "title": "chartjs",
+    "nav": [
+      {
+        "name": "Basic",
+        "link": "01-basic.html"
+      },
+      {
+        "name": "Data Bind",
+        "link": "02-data.html"
+      },
+      {
+        "name": "A11Y",
+        "link": "03-a11y.html"
+      },
+      {
+        "name": "Color",
+        "link": "04-color.html"
+      },
+      {
+        "name": "Bar Chart",
+        "link": "05-bar.html"
+      },
+      {
+        "name": "Pie Chart",
+        "link": "06-pie.html"
+      },
+      {
+        "name": "Line Chart",
+        "link": "07-line.html"
+      },
+      {
+        "name": "Bubble Chart",
+        "link": "08-bubble.html"
+      },
+      {
+        "name": "Legend",
+        "link": "09-legend.html"
+      },
+      {
+        "name": "Tooltip",
+        "link": "10-tooltip.html"
+      }
+    ]
+  },
+  {
+    "title": "gsap",
+    "nav": [
+      {
+        "name": "Basic",
+        "link": "01-basic.html"
+      },
+      {
+        "name": "Basic 2",
+        "link": "02-basic.html"
+      },
+      {
+        "name": "Timeline",
+        "link": "02-timeline.html"
+      },
+      {
+        "name": "Menu",
+        "link": "03-menu.html"
+      },
+      {
+        "name": "Scroll Trigger",
+        "link": "04-trigger.html"
+      },
+      {
+        "name": "Scroll Scrub",
+        "link": "05-scrub.html"
+      },
+      {
+        "name": "Scroll Pin",
+        "link": "06-pin.html"
+      }
+    ]
+  }
+]

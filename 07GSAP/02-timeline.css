@@ -1,0 +1,89 @@
+:root {
+  --header-bg: #8e44ad; /* 보라색 계열 */
+  --visual-bg: #e67e22; /* 주황색 계열 */
+  --box-bg: #e74c3c; /* 빨간색 계열 */
+  --footer-bg: #3498db; /* 파란색 계열 */
+  --text-color: #fff;
+  --gap-size: 16px;
+  --border-radius: 12px;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--gap-size);
+  width: min(90%, 1200px);
+  margin-inline: auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  > * {
+    height: 100px;
+    display: grid;
+    place-items: center;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+  }
+}
+
+.header {
+  background-color: var(--header-bg);
+  grid-column: 1 / -1;
+  height: 180px;
+  font-size: 2rem;
+}
+
+.visual {
+  background-color: var(--visual-bg);
+  grid-column: 1 / -1;
+  height: 140px;
+}
+
+.footer {
+  background-color: var(--footer-bg);
+  grid-column: 1 / -1;
+  height: 140px;
+}
+
+.box {
+  background-color: var(--box-bg);
+  aspect-ratio: 1; /* 정사각형 유지 */
+  height: auto; /* aspect-ratio와 함께 사용 */
+
+  &:nth-child(4n + 1) {
+    background-color: #2ecc71; /* 녹색 계열 */
+  }
+  &:nth-child(4n + 2) {
+    background-color: #f39c12; /* 주황 계열 */
+  }
+  &:nth-child(4n + 3) {
+    background-color: #9b59b6; /* 보라 계열 */
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+    width: 95%;
+  }
+
+  .header,
+  .visual,
+  .footer {
+    height: 120px;
+  }
+
+  .box {
+    aspect-ratio: unset;
+    height: 80px;
+  }
+}

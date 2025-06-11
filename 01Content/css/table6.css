@@ -1,0 +1,186 @@
+:root {
+  --gray200: #ededed;
+  --gray300: #c7c7c7;
+  --gray400: #555555;
+  --gray500: #333333;
+  --black: #000;
+  --white: #fff;
+}
+
+.table-type6 {
+  border-top: 2px solid var(--gray500);
+  tr {
+    border-bottom: 1px solid var(--gray300);
+  }
+  th {
+    border-right: 1px solid var(--gray500);
+    color: var(--gray500);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    background-color: var(--gray200);
+  }
+  th,
+  td {
+    padding: 16px 20px;
+  }
+}
+
+.btn-info {
+  width: 24px;
+  aspect-ratio: 1;
+  background: url(../images/ico_help.svg) no-repeat center;
+  border-radius: 1000px;
+  :is(td &, th &) {
+    translate: 0 6px;
+  }
+}
+
+[target="_blank"] {
+  display: inline-block;
+  padding: 4px 11px;
+  border: 1px solid var(--black);
+  background: var(--white);
+  &::after {
+    content: url(../images/ico_new.svg);
+    margin-left: 6px;
+  }
+}
+
+.dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(90%, 600px);
+  max-height: 80vh;
+  border: none;
+  border-radius: 18px;
+  padding: 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+  z-index: 1000;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #1d1d1f;
+
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.dialog[open] {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.dialog__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid #f2f2f7;
+}
+
+.dialog__header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  color: #1d1d1f;
+}
+
+.btn-close {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+  position: relative;
+}
+
+.btn-close:hover {
+  background-color: #f2f2f7;
+}
+
+.btn-close::before,
+.btn-close::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 1.5px;
+  background-color: #86868b;
+  transform-origin: center;
+}
+
+.btn-close::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.btn-close::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.dialog__content {
+  padding: 24px;
+  overflow-y: auto;
+  max-height: calc(80vh - 70px);
+  font-size: 17px;
+  line-height: 1.5;
+  color: #1d1d1f;
+}
+
+.dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+@media (max-width: 480px) {
+  .dialog {
+    width: 95%;
+    border-radius: 14px;
+  }
+
+  .dialog__header {
+    padding: 16px 20px;
+  }
+
+  .dialog__content {
+    padding: 20px;
+  }
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.text-center {
+  text-align: center;
+}
+
+.list-type1 {
+  > li {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 0 5px;
+    &::before {
+      content: "";
+      display: block;
+      width: 3px;
+      height: 3px;
+      border-radius: 100%;
+      background-color: #555;
+      align-self: start;
+      translate: 0 11px;
+    }
+    > ul {
+      grid-column: 1/ -1;
+      padding-left: 10px;
+    }
+  }
+}

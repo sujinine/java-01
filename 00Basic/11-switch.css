@@ -1,0 +1,30 @@
+p {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 5rem;
+}
+.block {
+  display: inline-grid;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+select {
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 12px;
+  height: 60px;
+  padding: 0 20px;
+  font-size: 20px;
+}
+div {
+  padding: 10px;
+}
+body {
+  transition: 0.5s;
+}

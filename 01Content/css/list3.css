@@ -1,0 +1,110 @@
+@layer Reset, Variable, Components, Layout, Utillity;
+
+@import url(./reset.css) layer(Reset);
+
+@layer Variable {
+  :root {
+    --gray800: #333333;
+    --gray700: #555855;
+    --gray600: #4e5968;
+    --gray500: #8b95a1;
+    --gray300: #d1d6db;
+    --gray200: #e5e8eb;
+    --gray100: #f2f4f6;
+
+    --black: #000;
+    --white: #fff;
+  }
+}
+
+@layer Layout {
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1rem;
+    padding: 50px;
+  }
+}
+@layer Components {
+  @layer Tab {
+    .tab-type1 {
+      display: flex;
+      padding-inline: 0.25rem;
+      border-bottom: 1px solid var(--gray300);
+      button {
+        padding: 1.2rem 1.75rem;
+        color: var(--gray500);
+        font-size: 1.6rem;
+        font-weight: 500;
+        &[aria-selected] {
+          color: var(--black);
+        }
+      }
+    }
+    .tab-type2 {
+      display: flex;
+      gap: 0.5rem;
+      button {
+        color: var(--gray800);
+        font-size: 1.2rem;
+        padding: 1rem 1.5rem;
+        border-radius: calc(infinity * 1rem);
+        border: 1px solid var(--gray200);
+      }
+    }
+  }
+  @layer Board {
+    .none-search {
+      align-content: center;
+      text-align: center;
+      height: 50rem;
+      color: var(--gray500);
+      font-size: 1.4rem;
+      &::before {
+        display: block;
+        content: url(../images/ico_search.svg);
+        margin-bottom: 1rem;
+      }
+    }
+    .faq-list {
+      li {
+        border-radius: 0.8rem;
+        transition: 0.5s;
+        &:has(a:hover, a:focus) {
+          background: var(--gray100);
+        }
+      }
+      a {
+        display: grid;
+        grid-template-columns: 18.6rem 1fr;
+        align-items: center;
+        padding-inline: 2rem;
+        gap: 2rem;
+        height: 8.3rem;
+        background: url(../images/ico_arrow_right.svg) no-repeat right 2rem center;
+      }
+      .category {
+        color: var(--gray700);
+        font-size: 1.4rem;
+      }
+      .subject {
+        color: var(--gray600);
+        font-size: 1.7rem;
+        font-weight: 700;
+        span {
+          color: var(--gray500);
+        }
+      }
+    }
+  }
+}
+
+@layer Utillity {
+  .mt12 {
+    margin-top: 1.2rem;
+  }
+  .mt40 {
+    margin-top: 4rem;
+  }
+}

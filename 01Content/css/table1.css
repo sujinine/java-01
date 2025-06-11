@@ -1,0 +1,38 @@
+:root {
+  --gray100: #e2e2e2;
+  --gray200: #b2b2b2;
+  --gray300: #717171;
+  --gray400: #72767a;
+  --gray500: #494949;
+  --black: #000;
+  --white: #fff;
+  --blue: #12a3cc;
+  --yellow: #feba12;
+}
+
+.count {
+  font-size: 16px;
+  padding-bottom: 10px;
+  text-align: right;
+}
+.table-type1 {
+  thead {
+    border-top: 2px solid var(--blue);
+    border-bottom: 1px solid var(--gray200);
+    th {
+      height: 47px;
+      color: var(--gray500);
+      font-size: 14px;
+    }
+  }
+  tbody {
+    tr {
+      border-bottom: 1px solid var(--gray100);
+    }
+    td {
+      padding-block: 22px;
+      color: var(--gray300);
+      text-align: center;
+    }
+  }
+}

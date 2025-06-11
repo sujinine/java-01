@@ -1,0 +1,108 @@
+@layer Reset, Variable, Components, Layout, Utillity;
+
+@import url(./reset.css) layer(Reset);
+
+@layer Variable {
+  :root {
+    --black: #000;
+    --white: #fff;
+  }
+}
+
+@layer Layout {
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1rem;
+    padding: 50px;
+  }
+  .wrapper {
+    min-width: 80vw;
+  }
+}
+
+@layer Components {
+  @layer Typography {
+    .text-type1 {
+      color: var(--black);
+      font-size: 4rem;
+      font-weight: 400;
+    }
+  }
+  @layer Thumbnail {
+    .thumbnail {
+      overflow: hidden;
+      border-radius: 1.3rem;
+      img {
+        width: 100%;
+        aspect-ratio: var(--aspect, 3/4);
+        object-fit: cover;
+      }
+      .product-type1 & {
+        margin-bottom: 0.7rem;
+      }
+    }
+  }
+  @layer Product {
+    .product-type1 {
+      /* --aspect: 1; */
+
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(29.7rem, 1fr));
+      gap: 3rem;
+
+      a {
+        display: grid;
+        gap: 0.6rem;
+      }
+      .title {
+        color: var(--black);
+        font-size: 1.5rem;
+      }
+      .level {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: var(--black);
+        font-size: 1.3rem;
+      }
+      .review {
+        color: var(--black);
+        font-size: 1.3rem;
+      }
+      .price {
+        color: var(--black);
+        font-size: 1.3rem;
+      }
+    }
+  }
+  @layer Rating {
+    .rating {
+      display: inline-flex;
+      width: 7.5rem;
+      height: 1.5rem;
+      background: var(--bg) no-repeat center / contain;
+      &.lv1 {
+        --bg: url(../images/ico_lv1.svg);
+      }
+      &.lv2 {
+        --bg: url(../images/ico_lv2.svg);
+      }
+      &.lv3 {
+        --bg: url(../images/ico_lv3.svg);
+      }
+      &.lv4 {
+        --bg: url(../images/ico_lv4.svg);
+      }
+      &.lv5 {
+        --bg: url(../images/ico_lv5.svg);
+      }
+    }
+  }
+}
+@layer Utillity {
+  .mt38 {
+    margin-top: 3.8rem;
+  }
+}

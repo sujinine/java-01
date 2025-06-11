@@ -1,0 +1,117 @@
+:root {
+  --gray100: #f6f6f6;
+  --gray200: #e0e0e0;
+  --gray300: #d9d9d9;
+  --gray400: #bfbfc5;
+  --gray500: #767676;
+  --gray600: #666666;
+  --gray700: #444444;
+  --black: #000000;
+  --white: #fff;
+}
+
+.wrapper {
+  width: 1000px;
+}
+
+.table-type4 {
+  tbody {
+    border-top: 1px solid var(--gray500);
+  }
+  th,
+  td {
+    border-bottom: 1px solid var(--gray200);
+    height: 53px;
+    padding-inline: 15px;
+    font-size: 13px;
+    letter-spacing: -0.26px;
+  }
+  th {
+    color: var(--gray700);
+    background: var(--gray100);
+  }
+  td {
+    color: var(--gray600);
+  }
+}
+
+.btn-info {
+  width: 21px;
+  aspect-ratio: 1;
+  background: url(../images/ico_info.svg) no-repeat center;
+  :is(th &, td &) {
+    translate: 0 4px;
+  }
+}
+
+.popup {
+  width: 340px;
+  inset: 50% auto auto 50%;
+  translate: -50% -50%;
+  padding: 10px;
+  border: 1px solid var(--gray200);
+  box-shadow: 4px 4px 4px 0px rgba(206, 206, 206, 0.25);
+  background: var(--white);
+}
+.popup__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--gray100);
+  h2 {
+    color: var(--gray700);
+    font-size: 15px;
+    line-height: 15px;
+  }
+}
+.popup__content {
+  padding-top: 10px;
+}
+
+.btn-close {
+  width: 25px;
+  aspect-ratio: 1;
+  background: url(../images/ico_close.svg) no-repeat;
+}
+
+.shipping-step {
+  display: flex;
+  gap: 15px;
+
+  li {
+    flex: 1;
+    color: var(--black);
+    font-size: 13px;
+    line-height: 14px;
+    white-space: nowrap;
+    display: grid;
+    gap: 5px;
+    text-align: center;
+    &:nth-child(1)::before {
+      content: url(../images/ico_table4_1.svg);
+    }
+    &:nth-child(2)::before {
+      content: url(../images/ico_table4_2.png);
+    }
+    &:nth-child(3)::before {
+      content: url(../images/ico_table4_3.svg);
+    }
+    &:nth-child(4)::before {
+      content: url(../images/ico_table4_4.png);
+    }
+    &:nth-child(5)::before {
+      content: url(../images/ico_table4_5.png);
+    }
+  }
+}
+
+.text-type1 {
+  color: #666;
+  font-size: 13px;
+}
+
+.list-type1 {
+  color: #666;
+  font-size: 13px;
+}

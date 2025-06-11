@@ -1,0 +1,118 @@
+@layer Reset, Variable, Components, Layout, Utillity;
+
+@import url(./reset.css) layer(Reset);
+
+@layer Variable {
+  :root {
+    --gray900: #101010;
+    --gray500: #5a5d5a;
+    --gray400: #666666;
+    --gray100: #d9d9d9;
+
+    --blue100: #f1f7fa;
+
+    --black: #000;
+    --white: #fff;
+  }
+}
+
+@layer Layout {
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1rem;
+    padding: 50px;
+  }
+  .wrapper {
+    min-width: 80vw;
+  }
+}
+
+@layer Components {
+  @layer Typography {
+    .text-type1 {
+      color: var(--black);
+      font-size: 4.5rem;
+    }
+  }
+  @layer Tab {
+    .tab-type1 {
+      display: flex;
+      li {
+        display: flex;
+        align-items: center;
+        + li {
+          &::before {
+            content: "";
+            margin-inline: 1.6rem;
+            height: 1.6rem;
+            border-left: 1px solid var(--gray100);
+          }
+        }
+      }
+      button {
+        color: var(--gray500);
+        font-size: 2rem;
+        &[aria-selected] {
+          color: var(--black);
+        }
+      }
+    }
+  }
+  @layer Board {
+    .news-list {
+      --columns: 14rem 1fr 9rem;
+
+      display: grid;
+      gap: 1.2rem;
+      li {
+        &:not(&:has(a)) {
+          text-align: center;
+          align-content: center;
+          height: 12rem;
+          background-color: var(--blue100);
+          border-radius: 1.2rem;
+          color: var(--gray900);
+          font-size: 1.7rem;
+        }
+      }
+      a {
+        display: grid;
+        padding-inline: 5rem;
+        grid-template-columns: var(--columns);
+        align-items: center;
+        height: 12rem;
+        background-color: var(--blue100);
+        border-radius: 1.2rem;
+      }
+      .category {
+        color: var(--gray900);
+        font-size: 1.7rem;
+      }
+      .subject {
+        color: var(--gray900);
+        font-size: 2.1rem;
+      }
+      .date {
+        color: var(--gray400);
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+@layer Utillity {
+  .align {
+    display: flex;
+    &.both {
+      justify-content: space-between;
+    }
+    &.vm {
+      align-items: center;
+    }
+  }
+  .mt45 {
+    margin-top: 4.5rem;
+  }
+}

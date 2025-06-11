@@ -1,0 +1,192 @@
+@layer Reset, Colors, Layout, Components, Organism, Template, Utillity;
+
+@import url(./reset.css) layer(Reset);
+
+@layer Colors {
+  :root {
+    --gray800: #333333;
+    --gray600: #666666;
+    --gray300: #cccccc;
+    --gray200: #e5e5e5;
+    --gray100: #f5f5f5;
+
+    --blue600: #005891;
+
+    --white: #fff;
+    --black: #000;
+  }
+}
+@layer Layout {
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1rem;
+    padding: 50px;
+  }
+}
+
+@layer Components {
+  @layer Typography {
+    .text-type1 {
+      color: var(--black);
+      font-size: 4.5rem;
+      font-weight: 700;
+    }
+    .text-type2 {
+      color: var(--blue600);
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+    .text-type3 {
+      color: var(--gray600);
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    .text-type4 {
+      color: var(--gray600);
+      font-size: 1.4rem;
+      line-height: 2.28;
+    }
+  }
+  @layer List {
+    .list-type1 {
+      display: grid;
+      gap: 1rem;
+      color: var(--gray600);
+      font-size: 1.4rem;
+      li {
+        padding-left: calc(var(--space, 0.8) * 1rem);
+        text-indent: calc(var(--space, 0.8) * -1rem);
+        &::before {
+          content: var(--mark, "-");
+        }
+      }
+    }
+  }
+  @layer Form {
+    .text-field {
+      height: 4.5rem;
+      border: 1px solid var(--gray300);
+      background: var(--white);
+    }
+  }
+  @layer Button {
+    .btn-type1 {
+      padding-inline: 1rem;
+      height: 6rem;
+      background: var(--blue600);
+      color: var(--white);
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    .btn-type2 {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding-inline: 1rem;
+      height: 4.5rem;
+      border: 1px solid var(--gray600);
+      background: var(--gray100);
+      color: var(--gray600);
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }
+}
+
+@layer Organism {
+  .login {
+    fieldset {
+      display: grid;
+      width: 40rem;
+    }
+    label {
+      color: var(--gray800);
+      font-size: 1.5rem;
+      font-weight: 700;
+      line-height: 2.13;
+    }
+    .text-field {
+      margin-bottom: 1.5rem;
+    }
+    button {
+      margin-top: 1.5rem;
+    }
+  }
+  .login-info {
+    display: grid;
+    width: 31.9rem;
+    .text-type2 {
+      margin-bottom: 2rem;
+    }
+    .text-type3 {
+      margin-bottom: 2.3rem;
+    }
+    .btn-type2 {
+      &:first-of-type {
+        margin-bottom: 3.8rem;
+      }
+    }
+  }
+
+  /* 팝업 */
+  .popup {
+    position: fixed;
+    z-index: 1000;
+    padding: 24px;
+    border: none;
+    border-radius: 8px;
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    inset: 50% auto auto 50%;
+    translate: -50% -50%;
+    &::backdrop {
+      background: rgba(0, 0, 0, 0.4);
+    }
+    button {
+      padding: 10px;
+      background: var(--blue600);
+      color: var(--white);
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+
+  #popup-message {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+}
+
+@layer Template {
+  .login-wrap {
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    gap: 5rem;
+    border-top: 0.2rem solid var(--gray800);
+    border-bottom: 0.1rem solid var(--gray200);
+    .login {
+      justify-self: center;
+      align-self: center;
+    }
+    .login-info {
+      padding: 5rem 4rem;
+      background-color: var(--gray100);
+    }
+  }
+}
+
+@layer Utillity {
+  .mt45 {
+    margin-top: 4.5rem;
+  }
+  .mt30 {
+    margin-top: 3rem;
+  }
+  .mt26 {
+    margin-top: 2.6rem;
+  }
+}

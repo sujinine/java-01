@@ -1,0 +1,16 @@
+<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icon-park-solid:hard-disk-one">
+<mask id="mask0_6683_548" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="2" y="2" width="17" height="16">
+<g id="svgIDa">
+<g id="Group">
+<path id="Vector" d="M16.75 2.5H4.25C3.91848 2.5 3.60054 2.6317 3.36612 2.86612C3.1317 3.10054 3 3.41848 3 3.75V16.25C3 16.5815 3.1317 16.8995 3.36612 17.1339C3.60054 17.3683 3.91848 17.5 4.25 17.5H16.75C17.0815 17.5 17.3995 17.3683 17.6339 17.1339C17.8683 16.8995 18 16.5815 18 16.25V3.75C18 3.41848 17.8683 3.10054 17.6339 2.86612C17.3995 2.6317 17.0815 2.5 16.75 2.5Z" stroke="white"/>
+<path id="Vector_2" d="M13.8334 2.5H7.16669V6.66667H13.8334V2.5Z" fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M7.58331 15H13.4166" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</mask>
+<g mask="url(#mask0_6683_548)">
+<path id="Vector_4" d="M0.5 0H20.5V20H0.5V0Z" fill="#72767A"/>
+</g>
+</g>
+</svg>

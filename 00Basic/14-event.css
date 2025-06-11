@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #fafafa;
+  color: #1d1d1f;
+}
+
+:is(hr, form) {
+  margin-block: 40px 1rem;
+}
+
+h2 {
+  margin-block: 40px 10px;
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: -0.5px;
+  color: #1d1d1f;
+}
+
+a,
+button {
+  border-radius: 20px;
+  padding: 12px 30px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #0071e3;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background-color: #0077ed;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+
+  &:active {
+    background-color: #0063c9;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+}
+
+.event {
+  display: grid;
+  gap: 0 20px;
+  grid-template:
+    "h2-1 h2-2"
+    "parent-1 parent-2";
+
+  h2 {
+    &:nth-of-type(1) {
+      grid-area: h2-1;
+    }
+    &:nth-of-type(2) {
+      grid-area: h2-2;
+    }
+  }
+
+  .parent {
+    &:nth-of-type(1) {
+      grid-area: parent-1;
+    }
+    &:nth-of-type(2) {
+      grid-area: parent-2;
+    }
+  }
+}
+
+fieldset {
+  border: 1px solid #d2d2d7;
+  border-radius: 12px;
+  padding: 20px;
+  display: grid;
+  gap: 16px;
+  background-color: #fff;
+
+  legend {
+    font-size: 18px;
+    font-weight: 500;
+    padding-inline: 12px;
+    color: #1d1d1f;
+  }
+
+  :is(input, select) {
+    height: 44px;
+    border: 1px solid #d2d2d7;
+    border-radius: 12px;
+    width: 100%;
+    padding-inline: 16px;
+    font-size: 16px;
+    transition: border-color 0.2s ease;
+    background-color: #fff;
+
+    &:focus {
+      border-color: #0071e3;
+      outline: none;
+    }
+  }
+}
+
+.parent {
+  background-color: var(--bg, #0071e3);
+  padding: 40px;
+  border-radius: 18px;
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.children {
+  height: 200px;
+  padding: 20px;
+  margin: 10px;
+  color: #1d1d1f;
+  box-sizing: border-box;
+  background-color: var(--bgChildren, #f5f5f7);
+  align-content: center;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+.event-list {
+  :is(input, select) {
+    height: 44px;
+    border: 1px solid #d2d2d7;
+    border-radius: 12px;
+    width: 100%;
+    padding-inline: 16px;
+    font-size: 16px;
+  }
+}
+
+fieldset {
+  .form & {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+
+    button {
+      grid-column: 1/-1;
+      width: 100%;
+    }
+  }
+}
+
+.keyboard {
+  width: 100%;
+}
+
+.mouse {
+  background-color: #5856d6;
+  color: white;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.dom {
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.ani {
+  .children {
+    width: 10%;
+    animation: var(--ani, ani) 1 2s both cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    background-color: var(--bg, #ffb9c6);
+    transition: all 0.4s ease;
+    border-radius: 12px;
+  }
+}
+
+@keyframes ani {
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes size {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@keyframes move {
+  0% {
+    width: 100px;
+    height: 100px;
+  }
+  100% {
+    translate: 200px;
+    width: 100px;
+    height: 100px;
+  }
+}
