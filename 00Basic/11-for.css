@@ -34,11 +34,7 @@ a {
     text-align: center;
 
     &::before {
-<<<<<<< HEAD
       content: '';
-=======
-      content: "";
->>>>>>> af5e0b1c9e72058f7f0158aca8d27e7e022a533c
       display: block;
       aspect-ratio: 1;
       border-radius: 1rem;
@@ -47,46 +43,33 @@ a {
 
     &.ico1 {
       &::before {
-<<<<<<< HEAD
         background: url(./images/ico1.svg) no-repeat center / 30% auto
           hsl(var(--color, 50), 100%, 85%); /* light */
         /* hsl(200, 70%, calc(var(--lightness) * 1%)); light */
         /* hsl(200, calc(var(--saturation) * 1%), 60%); */
-=======
-        background: url(./images/ico1.svg) no-repeat center / 30% auto hsl(var(--color, 50), 100%, 85%);
->>>>>>> af5e0b1c9e72058f7f0158aca8d27e7e022a533c
       }
     }
 
     &.ico2 {
       &::before {
-<<<<<<< HEAD
         background: url(./images/ico2.svg) no-repeat center / 30% auto
           hsl(var(--color, 50), 100%, 85%); /* light */
         /* hsl(200, 70%, calc(var(--lightness) * 1%)); */
         /* hsl(200, calc(var(--saturation) * 1%), 60%); */
-=======
-        background: url(./images/ico2.svg) no-repeat center / 30% auto hsl(var(--color, 50), 100%, 85%);
->>>>>>> af5e0b1c9e72058f7f0158aca8d27e7e022a533c
       }
     }
 
     &.ico3 {
       &::before {
-<<<<<<< HEAD
         background: url(./images/ico3.svg) no-repeat center / 30% auto
           hsl(var(--color, 50), 100%, 85%); /* light */
         /* hsl(200, 70%, calc(var(--lightness) * 1%)); */
         /* hsl(200, calc(var(--saturation) * 1%), 60%); */
-=======
-        background: url(./images/ico3.svg) no-repeat center / 30% auto hsl(var(--color, 50), 100%, 85%);
->>>>>>> af5e0b1c9e72058f7f0158aca8d27e7e022a533c
       }
     }
 
     &.ico4 {
       &::before {
-<<<<<<< HEAD
         background: url(./images/ico4.svg) no-repeat center / 30% auto
           hsl(var(--color, 50), 100%, 85%); /* light */
         /* hsl(200, 70%, calc(var(--lightness) * 1%)); */
@@ -100,9 +83,6 @@ a {
           hsl(var(--color, 50), 100%, 85%); /* light */
         /* hsl(200, 70%, calc(var(--lightness) * 1%)); */
         /* hsl(200, calc(var(--saturation) * 1%), 60%); */
-=======
-        background: url(./images/ico4.svg) no-repeat center / 30% auto hsl(var(--color, 50), 100%, 85%);
->>>>>>> af5e0b1c9e72058f7f0158aca8d27e7e022a533c
       }
     }
   }
@@ -128,7 +108,6 @@ a {
 
   li {
     color: hsl(var(--color), 90%, 40%);
-<<<<<<< HEAD
     /* color: hsl(220, var(--color)%, 40%); */
     /* color: hsl(220, 90%, calc(var(--color))); */
     /* color: hsl(220, 90%, calc(var(--color) * 1%)); */
@@ -136,9 +115,6 @@ a {
     /* color: hsl(220, calc(var(--color) * 1%), 40%); */
 /*         3.채도 변화                      ↑고정 */
     font-size: 2.4rem;
-=======
-    font-size: 1.2rem;
->>>>>>> af5e0b1c9e72058f7f0158aca8d27e7e022a533c
   }
 }
 
@@ -150,12 +126,8 @@ a {
     padding-inline: 1.5rem;
 
     + li {
-<<<<<<< HEAD
       background: linear-gradient(to right, silver, silver) no-repeat left / 1px
         1rem;
-=======
-      background: linear-gradient(to right, silver, silver) no-repeat left / 1px 1rem;
->>>>>>> af5e0b1c9e72058f7f0158aca8d27e7e022a533c
     }
   }
 
